@@ -7,7 +7,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem risus, ullamcor
 
 ## Table of Contents
 <a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%201%3A%20Diagram%20Creation/Diagram.md>Part 1: Diagram Creation</a><br/>
-<a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%201%3A%20Diagram%20Creation/Diagram.md>Part 2: </a><br/>
+<a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202%3A%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md>Part 2: Installing Applications and Virtual Machine Setup</a><br/>
 <a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%201%3A%20Diagram%20Creation/Diagram.md>Part 3: </a><br/>
 <a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%201%3A%20Diagram%20Creation/Diagram.md>Part 4: </a><br/>
 <a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%201%3A%20Diagram%20Creation/Diagram.md>Part 5: </a><br/>
