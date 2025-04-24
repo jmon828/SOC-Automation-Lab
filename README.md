@@ -10,4 +10,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem risus, ullamcor
 <a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202%3A%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md>Part 2: Installing Applications and Virtual Machine Setup</a><br/>
 <a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203%3A%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md>Part 3: Configruring TheHive and Wazuh Server</a><br/>
 <a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%201%3A%20Diagram%20Creation/Diagram.md>Part 4: </a><br/>
-<a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%201%3A%20Diagram%20Creation/Diagram.md>Part 5: </a><br/>
+<a href =https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%205%3A%20Integrating%20Wazuh%2C%20TheHive%20and%20Shuffle/Intergrating%20Wazuh%2C%20The%20Hive%20and%20Shuffle.md>Part 5: Integrating Wazuh, TheHive and Shuffle</a><br/>
