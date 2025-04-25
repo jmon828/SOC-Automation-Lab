@@ -32,6 +32,73 @@ Install Dependencies, Select the way you want the features to be installed, and 
 ![image](https://github.com/user-attachments/assets/2d25a123-049a-4ae3-bb8c-1e75e4838f5c)<br/>
 Note: You might have to restart you Computer before opening VirtualBox<br/>
 
-Step 2: Install and Configure Windows 10 
+Step 2: Install and Configure Windows 10<br/>
+![image](https://github.com/user-attachments/assets/56632ebb-730e-4f17-b017-f060776270ad)<br/>
+Head over to https://www.microsoft.com/en-us/software-download/windows10 and download a Media Creation file to generate a Windows 10.iso file<br/>
+
+You would then be greeted with a License agreement screen, in which you would hit Accept.
+
+Once you have accepted the License you are then directed to this page. – this screen Defaults to Upgrade this PC now” so in order to create a .iso file we would have to switch it over to the “Create Installation media (USB flash drive, DVD, or ISO file) for another PC” and hit next!
+![image](https://github.com/user-attachments/assets/2534ea37-bd15-4d6e-94db-55c43767a227)
+The Next Step, prompts you to select your desired Language, Architecture and Edition
+![image](https://github.com/user-attachments/assets/d4ce08a5-7cca-4f5c-86d1-808ea993921c)
+Next You are then presented with the option to choose which media (USB) to use. – choose the ISO file and save it to your desired location
+![image](https://github.com/user-attachments/assets/332f33e8-dc9c-4051-821f-9c0a95a80294)
+
+Step 3: Integrating Windows 10 with Virtual Box<br/>
+Continuing after the previous step, Open VirtualBox > Click on machine (top Left) and click new
+![image](https://github.com/user-attachments/assets/92a5c79b-6fc6-46ba-9b93-936f5f7b04a5)
+You are then Presented with the screen below
+![image](https://github.com/user-attachments/assets/608cba61-e46c-46fb-a383-531efbd89e13)
+There are three categories that need to be filled:
+<ul>
+<l1>o	Name and Operating System</l1><br/>
+<l2>o	Hardware</l2><br/>
+<l3>o	Hard disk</l3><br/>
+</ul>
+
+For Name and Operating System- Fill properties Accordingly *See Below for Example:
+<ul>
+<l1>1.	Name your Virtual Machine</l1><br/>
+<l2>2.	Change “Folder” property to where you want to install</l2><br/>
+<l3>3.	Ensure the “ISO Image” property is correct<l3><br/>
+<l4>4.	Ensure that “Skip Unattended Installation is Checked</l4><br/>
+</ul>
  
+![image](https://github.com/user-attachments/assets/cc823177-73f5-4b58-ac43-7ad0035dfaf9)
+
+Hardware – Fill Properties according to what your physical system can handle *See Below for Example
+![image](https://github.com/user-attachments/assets/604f045c-4693-47f5-b7a7-58268e12e2c1)
+
+Hard Disk – this is how large the Virtual Disk is – See below for Example
+![image](https://github.com/user-attachments/assets/1f07ada1-d6ba-4f36-9eb0-03a3874a847b)
+*Hit Finish After!
+
+Step 4: Windows 10 Configuration<br/>
+Once your VM is done you can start your VM
+![image](https://github.com/user-attachments/assets/6fa4349a-c46d-45c2-bc89-abfe5d7903b7)
+Once bootup is done > Setup Windows 10>
+![image](https://github.com/user-attachments/assets/2f25aed8-8875-45a7-804e-e431f3fb4490)
+![image](https://github.com/user-attachments/assets/8f0db47b-12eb-475e-800b-c8ba9f2e190d)
+
+ 
+Once that screen is by passed > Click “I don’t have a private key”
+![image](https://github.com/user-attachments/assets/d8050f81-6142-46be-95a6-de08adf434d3)
+
+Select Windows 10 Pro & Accept the Terms
+![image](https://github.com/user-attachments/assets/357010bf-cea2-448e-a0f2-85bb792e18aa)
+![image](https://github.com/user-attachments/assets/cb7564ec-e170-4c46-bc37-b346a0446c08)
+
+ 
+*Select Custom Windows Only > Hit Next > Let Windows Install
+ ![image](https://github.com/user-attachments/assets/46d6b08c-21d4-4e19-a9ae-1c2df3f78946)
+
+Select Where you want to install Windows (I selected the Default)
+![image](https://github.com/user-attachments/assets/155628b2-508d-486a-8207-f080bb8f3dd5)
+
+ 
+ 
+*Once done install a web browser. Also, take a snapshot of your VM for best practices
+![image](https://github.com/user-attachments/assets/50d602e7-db2e-4e31-b4bc-b8e31a8b566d)
+
 
