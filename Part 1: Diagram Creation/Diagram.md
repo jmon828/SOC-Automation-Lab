@@ -3,28 +3,27 @@
 
 
 ## Objective
-Create a visual that allows us to understand how data might flow and what components are required to build our SOC Automation Project 
+Create a visual that allows us to visualize how data might flow and what components are required to build our SOC Automation Project 
 
 ## Skills Learned
--	Utilized Draw.io to provide a graphical interface to understand how packets flow and 
+-	Utilized Draw.io to provide a graphical interface to visulaize how packets flow and what components will be involved in our project.
 
 ## Tools Used
--	Draw.io- easy-to-use flowchart/diagram maker
+<a href="https://app.diagrams.net/"> Draw.io- easy-to-use flowchart/diagram maker</a>
 
 ## Steps
 ### Step 1: Component Overview 
-<dl>
-<dt>Compnent Breakdown:</dt>
-  <dt> 4 Internet Clouds</dt>
-    <dd>    -1 = Internet </dd>
-    <dd>    -1 = TheHIVE </dd>
-    <dd>    -1 = Wazuh </dd>   
-    <dd>    -1 = Shuffle </dd>
-  <dt>2 Computers </dt>
-    <dd>  -1 = Windows 10 Client (Wazuh Agent) </dd>
-    <dd>  -1 = SOC Analyst</dd>
-  <dt>1 Router</dt>
-</dl>
+Compnent Breakdown:
+<ul>
+<l1> 4 Internet Clouds</l1><br/>
+<l2>  -1 = Internet </l2><br/>
+<l3>  -1 = TheHIVE </l3><br/>
+<l4>  -1 = Wazuh </l4><br/>
+<l5>  -1 = Shuffle </l5><br/>
+<l6>2 Computers </l6><br/>
+<l7>  -1 = Windows 10 Client (Wazuh Agent) </l7><br/>
+<l8>  -1 = SOC Analyst</dd><dt>1 Router</l8><br/>
+</ul>
 
 ![image](https://github.com/user-attachments/assets/78408352-7bf5-4aea-8233-e3e91635a465)
 
