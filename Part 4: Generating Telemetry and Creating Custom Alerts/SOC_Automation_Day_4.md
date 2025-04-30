@@ -1,14 +1,13 @@
-## SOC Automation Lab – Day 4
 ## Objective
 Generate Telemetry from our Windows 10 Machine and ensure that it is being ingested into Wazuh
 ## Skills
 Configured Wazuh
 Sent Telemetry that contained Mimikatz
 Created a custom alert that gets triggered if Mimikatz is activated
-##Tools
+## Tools
 Mimikatz – is an application that attackers/redteamers use to extract credentials from your machine
 
-##Links
+## Links
 
 
 ## Steps
