@@ -10,10 +10,8 @@ VirusTotal
 ChatGPT
 Temp-mail.io – Temporary mailbox
 Pyinstaller – converts script into executable
+
 ## Links
-
-
-
 
 
 ## Steps
