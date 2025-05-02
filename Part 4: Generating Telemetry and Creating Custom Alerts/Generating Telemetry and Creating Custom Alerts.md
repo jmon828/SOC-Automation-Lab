@@ -297,4 +297,5 @@ Next we want to head to run the renamed Mimkatz and check our dashboard to see i
 Admin Powershell > cd C:\Users\User\Downloads\mimikatz_trunk\x64 > command: .\youareawesome > Check your Dashboard
 
 ![image](https://github.com/user-attachments/assets/597ee421-ecf9-4c2d-a539-839bcecaa47a)
+![image](https://github.com/user-attachments/assets/0e70fda2-86c8-4afc-81b8-c28e93a89036)
 
