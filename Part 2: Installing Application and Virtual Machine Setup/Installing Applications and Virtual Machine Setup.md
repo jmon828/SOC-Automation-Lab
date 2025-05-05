@@ -1,12 +1,11 @@
 # Objective: 
-Using Steven’s (MyDFIR) as guidance - we will be Install Applications and Setting up our own Virtual Machines<br/>
+Using Steven’s (MyDFIR) as guidance - we will be Install Applications and Setting up our own Virtual Machines by the end of this section we should have:<br/>
 
 
 <ul>
-By the end of this section we should have:<br/>
-	1. 1 Windows 10 Machine with Sysmon Installed<br/>
-	2. 1 Wauzh Server <br/>
-	3. 1 TheHive Server<br/>
+	-	1 Windows 10 Machine with Sysmon Installed<br/>
+	-	1 Wauzh Server <br/>
+	-	1 TheHive Server<br/>
 </ul>
 
 # Skills
