@@ -1,5 +1,5 @@
 # Objective: 
-Using <a href="https://www.youtube.com/watch?v=YxpUx0czgx4&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=7"> Steven’s (MyDFIR) Video</a> as guidance - we will be installing applications and setting up our own Virtual Machines by the end of this section we should have:<br/>
+Using <a href="https://www.youtube.com/watch?v=YxpUx0czgx4&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=7"> Steven’s (MyDFIR) Video</a> as guidance - we will be installing applications and setting up our own Virtual Machines! By the end of this section we should have:<br/>
 
 
 <ul>
