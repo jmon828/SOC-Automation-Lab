@@ -1,28 +1,40 @@
 # Objective: 
-Using Steven’s (MyDFIR) guide - Install Applications and Setup Virtual Machines
+Using Steven’s (MyDFIR) as guidance - we will be Install Applications and Setting up our own Virtual Machines<br/>
+
+
+<ul>
+By the end of this section we should have:<br/>
+	1. 1 Windows 10 Machine with Sysmon Installed<br/>
+	2. 1 Wauzh Server <br/>
+	3. 1 TheHive Server<br/>
+</ul>
 
 # Skills
-1.	Learn the basics of installing & Configuring a Virtual Machine on a Type 2 Hypervisor 
-2.	Learned how to Install  Sysmon tool 
-3.	Learned how to Install TheHive and Wazuh via SSH
-4.	Utilize a Cloud provider (Digital Ocean) to create a Virtual Machine
+<ul>
+1.	Learned the basics of installing & Configuring a Virtual Machine on a Type 2 Hypervisor <br/>
+2.	Learned how to Install  Sysmon tool <br/>
+3.	Learned how to Install TheHive and Wazuh via SSH<br/>
+4.	Utilize a Cloud provider (Digital Ocean) to create a Virtual Machine<br/>
+</ul>
 
 # Tools:
 <ul>
-<l1>•	Sysmon – free Microsoft tool part of the sys internal suite – it provides you with a lot of telemetry, allowing you to increase the chances of you </l1><br/>
+<l1>•	Sysmon – Free Microsoft tool part of the sys internal suite</l1><br/>
 <l2>•	Hive- 4-in-1 Open-source Security incident response platform</l2><br/>
-<l3>•	Wazuh- open source cybersecurity platform that integrates SIEM and XDR capabailities </l3><br/>
-<l4>•	VirtualBox – </l4><br/>
+<l3>•	Wazuh- Open source cybersecurity platform that integrates SIEM and XDR capabailities </l3><br/>
+<l4>•	VirtualBox – Type 2 Hypervisor</l4><br/>
 <l5>•	Digital Ocean- Cloud Platform </l5><br/>
-<l6><a>• </a><a href="https://www.putty.org/">PuTTY </a><a>SSH terminal emulator </l6><br/>
+<l6>•   PuTTY- SSH terminal emulator </l6><br/>
 </ul>
 
 # Links
 <ul>
-<a href="https://www.virtualbox.org/wiki/Downloads" >	1. Virtualbox Download</a><br/>
-<a href="https://www.microsoft.com/en-us/software-download/windows10"> 2. Windows 10.iso Download</a> <br/>
-<a href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon">	3. Sysmon Download</a><br/>
-<a href="https://raw.githubusercontent.com/olafhartong/sysmon-modular/refs/heads/master/sysmonconfig.xml">	4. Sysmon Config file</a><br/>
+<a href="https://www.youtube.com/watch?v=YxpUx0czgx4&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=7">1. SOC Automation Project (Home Lab) | Part 2 </a><br/>
+<a href="https://www.virtualbox.org/wiki/Downloads" >	2. Virtualbox Download</a><br/>
+<a href="https://www.microsoft.com/en-us/software-download/windows10"> 3. Windows 10.iso Download</a> <br/>
+<a href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon">	4. Sysmon Download</a><br/>
+<a href="https://raw.githubusercontent.com/olafhartong/sysmon-modular/refs/heads/master/sysmonconfig.xml">	5. Sysmon Config file</a><br/>
+<a href="https://www.putty.org/">6. PuTTY Download</a>
 </ul>
 
 # Steps
