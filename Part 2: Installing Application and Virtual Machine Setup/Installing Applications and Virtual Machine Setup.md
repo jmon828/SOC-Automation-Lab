@@ -198,7 +198,7 @@ Scroll to Finalize Details > Hostname: Wazuh (or any name) > Create Droplet
 ![image](https://github.com/user-attachments/assets/f156ddee-6b4e-4251-8074-cf51d1daa53f)
 
 While Waiting we will setup a Firewall 
-	Left Hand-side> Drop down Manage> Networking 
+	Left Hand-side> Drop down Manage> Networking<br/>
  ![image](https://github.com/user-attachments/assets/8b208cc6-7c2f-4614-b6ad-4193b8f26958)
 
 Firewalls Tab >Create Firewall
