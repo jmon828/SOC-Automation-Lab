@@ -19,8 +19,10 @@ Using Steven’s (MyDFIR) guide - Install Applications and Setup Virtual Machine
 
 # Links
 <ul>
-	<l1></l1>
-	
+<a href="https://www.virtualbox.org/wiki/Downloads" >	1. Virtualbox Download</a><br/>
+<a href="https://www.microsoft.com/en-us/software-download/windows10"> 2. Windows 10.iso Download</a> <br/>
+<a href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon">	3. Sysmon Download</a><br/>
+<a href="https://raw.githubusercontent.com/olafhartong/sysmon-modular/refs/heads/master/sysmonconfig.xml">	4. Sysmon Config file</a><br/>
 </ul>
 
 # Steps
