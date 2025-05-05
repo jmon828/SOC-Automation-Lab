@@ -25,8 +25,16 @@ Using Steven’s (MyDFIR) guide - Install Applications and Setup Virtual Machine
 
 # Steps
 <ul>
-	<a href =><a/>
-
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 1: Installing Virtual Box <a/><br/>
+ 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 2: Install and Configure Windows 10 <a/><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 3: Integrating Windows 10 with Virtual Box<a/><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 4: Windows 10 Configuration<a/><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 5: Installing Sysmon <a/><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 6: Installing Wazuh<a/><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 7: Installing TheHive<a/><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 8: Installing Java<a/><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox"> Step 9: Installing Elastic Search<a/><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%202:%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-1--install-virtualbox">Step 10: Finalizing TheHive<a/><br/>
 </ul>
 
 ## **Step 1** : Install VirtualBox<br/>
@@ -43,7 +51,7 @@ Install Dependencies, Select the way you want the features to be installed, and 
 ![image](https://github.com/user-attachments/assets/2d25a123-049a-4ae3-bb8c-1e75e4838f5c)<br/>
 Note: You might have to restart you Computer before opening VirtualBox<br/>
 
-## Step 2: Install and Configure Windows 10**<br/>
+## Step 2: Install and Configure Windows 10
 ![image](https://github.com/user-attachments/assets/56632ebb-730e-4f17-b017-f060776270ad)<br/>
 Head over to https://www.microsoft.com/en-us/software-download/windows10 and download a Media Creation file to generate a Windows 10.iso file<br/>
 
@@ -56,7 +64,7 @@ The Next Step, prompts you to select your desired Language, Architecture and Edi
 Next You are then presented with the option to choose which media (USB) to use. – choose the ISO file and save it to your desired location
 ![image](https://github.com/user-attachments/assets/332f33e8-dc9c-4051-821f-9c0a95a80294)
 
-**Step 3**: Integrating Windows 10 with Virtual Box<br/>
+## Step 3: Integrating Windows 10 with Virtual Box
 Continuing after the previous step, Open VirtualBox > Click on machine (top Left) and click new
 ![image](https://github.com/user-attachments/assets/92a5c79b-6fc6-46ba-9b93-936f5f7b04a5)
 You are then Presented with the screen below
@@ -85,7 +93,7 @@ Hard Disk – this is how large the Virtual Disk is – See below for Example
 ![image](https://github.com/user-attachments/assets/1f07ada1-d6ba-4f36-9eb0-03a3874a847b)
 *Hit Finish After!
 
-**Step 4**: Windows 10 Configuration<br/>
+## Step 4: Windows 10 Configuration
 Once your VM is done you can start your VM
 ![image](https://github.com/user-attachments/assets/6fa4349a-c46d-45c2-bc89-abfe5d7903b7)
 Once bootup is done > Setup Windows 10>
@@ -112,7 +120,7 @@ Select Where you want to install Windows (I selected the Default)
 *Once done install a web browser. Also, take a snapshot of your VM for best practices
 ![image](https://github.com/user-attachments/assets/50d602e7-db2e-4e31-b4bc-b8e31a8b566d)
 
-**Step 5**: Installing Sysmon
+## Step 5: Installing Sysmon
 Download Sysmon on you computer <a href=https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)>Sysmon Link</a>
 ![image](https://github.com/user-attachments/assets/a00d9ee6-3f7c-4f9e-bfb2-b3ba442babba)
 
@@ -148,7 +156,7 @@ Ensure  that the “sysmonconfig.xml” Is in the same directory as “sysmon64.
 Re-check Service again to verify Sysmon is installed: Windows Key + R > Services.msc > look for Sysmon64
 ![image](https://github.com/user-attachments/assets/210ec869-c24d-461a-b752-9409e8129f2d)
 
-**Step 6**: Installing Wazuh<br/>
+## Step 6: Installing Wazuh<br/>
 Disclaimer: There are other ways of doing this – My HOST Computer does not have enough resources for me to host another VM therefore I followed the video (in resources) to host the Wazuh client on the cloud. <br/>
 
 On your HOST Computer head to Digital Ocean > Create your Account > Create > Droplets (Droplets are VMs)
@@ -228,7 +236,7 @@ Open a web browser > Type: https://167.99.189.219 in URL Bar > Advanced > Procee
 ![image](https://github.com/user-attachments/assets/31ee507f-de96-4418-9949-f93adec848cc)
 ![image](https://github.com/user-attachments/assets/ec246d60-c604-404a-a910-8e38896c2606)
 
-**Step 7: Installing TheHive**
+## Step 7: Installing TheHive
 	*Disclaimer this server will also be on Digital Ocean
 Same as Before Create Droplets > Choose Region > Choose Image Ubuntu > Specs Similar to Wazuh > Password > Hostname 
 ![image](https://github.com/user-attachments/assets/34b026e6-8a51-4648-ae60-bfd0e07f0e7d)
@@ -252,7 +260,7 @@ Once you are in, we must install Java, Cassandra, Elastic Search, The Hive
 As root user > install Dependencies Command: apt install wget gnupg apt-transport-https git ca-certificates ca-certificates-java curl  software-properties-common python3-pip lsb-release
 ![image](https://github.com/user-attachments/assets/25af4c47-561d-4d6a-a142-9122fb75eab5)
 
-**Step 8: Installing Java**<br/>
+## Step 8: Installing Java
 Once finished, we can install JAVA<br/>
 As Root user > Copy & Paste the commands line by line below:
 1.	wget -qO- https://apt.corretto.aws/corretto.key | sudo gpg --dearmor  -o /usr/share/keyrings/corretto.gpg
@@ -269,7 +277,7 @@ Once finished, We can now install Cassandra
 3.	sudo apt update
 4.	sudo apt install Cassandra<br/>
 
-**Step 9: Installing Elastic Search**<br/>
+## Step 9: Installing Elastic Search
 Once Cassandra is finished we can install Elastic Search<br/>
 As Root user > Copy & Paste the commands line by line below:<br/>
 1.	wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch |  sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
@@ -278,7 +286,7 @@ As Root user > Copy & Paste the commands line by line below:<br/>
 4.	sudo apt update
 5.	sudo apt install elasticsearch<br/>
 
-**Step 10: Finalizing TheHive**
+## Step 10: Finalizing TheHive
 Once Elastic Search is Done, we can now install TheHive<br/>
 As Root user > Copy & Paste the commands line by line below:
 1.	wget -O- https://archives.strangebee.com/keys/strangebee.gpg | sudo gpg --dearmor -o /usr/share/keyrings/strangebee-archive-keyring.gpg
