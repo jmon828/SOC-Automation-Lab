@@ -1,5 +1,5 @@
 # Objective: 
-Using Steven’s (MyDFIR) as guidance - we will be Install Applications and Setting up our own Virtual Machines by the end of this section we should have:<br/>
+Using Steven’s (MyDFIR) as guidance - we will be install applications and Setting up our own Virtual Machines by the end of this section we should have:<br/>
 
 
 <ul>
@@ -10,20 +10,20 @@ Using Steven’s (MyDFIR) as guidance - we will be Install Applications and Sett
 
 # Skills
 <ul>
-1.	Learned the basics of installing & Configuring a Virtual Machine on a Type 2 Hypervisor <br/>
+1.	Learned the basics of installing & configuring a Virtual Machine on a type 2 hypervisor <br/>
 2.	Learned how to Install  Sysmon tool <br/>
 3.	Learned how to Install TheHive and Wazuh via SSH<br/>
-4.	Utilize a Cloud provider (Digital Ocean) to create a Virtual Machine<br/>
+4.	Utilize a cloud provider (Digital Ocean) to create a Virtual Machine that acts as our Wazuh and TheHive servers<br/>
 </ul>
 
 # Tools:
 <ul>
-<l1>•	Sysmon – Free Microsoft tool part of the sys internal suite</l1><br/>
-<l2>•	Hive- 4-in-1 Open-source Security incident response platform</l2><br/>
+<l1>•	Sysmon – Free Microsoft tool part of the Sysinternals suite</l1><br/>
+<l2>•	Hive- 4-in-1 Open-source security incident response platform</l2><br/>
 <l3>•	Wazuh- Open source cybersecurity platform that integrates SIEM and XDR capabailities </l3><br/>
 <l4>•	VirtualBox – Type 2 Hypervisor</l4><br/>
 <l5>•	Digital Ocean- Cloud Platform </l5><br/>
-<l6>•   PuTTY- SSH terminal emulator </l6><br/>
+<l6>•   PuTTY- Free SSH terminal emulator </l6><br/>
 </ul>
 
 # Links
@@ -50,7 +50,7 @@ Using Steven’s (MyDFIR) as guidance - we will be Install Applications and Sett
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/edit/main/Part%202%3A%20Installing%20Application%20and%20Virtual%20Machine%20Setup/Installing%20Applications%20and%20Virtual%20Machine%20Setup.md#step-10-finalizing-thehive">Step 10: Finalizing TheHive<a/><br/>
 </ul>
 
-## **Step 1** : Install VirtualBox<br/>
+## Step 1 : Install VirtualBox<br/>
 ![image](https://github.com/user-attachments/assets/facb7ec4-2f4a-4458-9180-49c3f98fe3ed)<br/>
 head to https://www.virtualbox.org/wiki/Downloads and choose the installation according to your operating system. (I chose the Windows hosts)
 Verify Checksum (available on VirtualBox’s Website) and Run the installer
@@ -104,7 +104,7 @@ Hardware – Fill Properties according to what your physical system can handle *
 
 Hard Disk – this is how large the Virtual Disk is – See below for Example
 ![image](https://github.com/user-attachments/assets/1f07ada1-d6ba-4f36-9eb0-03a3874a847b)
-*Hit Finish After!
+Hit Finish After!
 
 ## Step 4: Windows 10 Configuration
 Once your VM is done you can start your VM
@@ -122,7 +122,7 @@ Select Windows 10 Pro & Accept the Terms
 ![image](https://github.com/user-attachments/assets/cb7564ec-e170-4c46-bc37-b346a0446c08)
 
  
-*Select Custom Windows Only > Hit Next > Let Windows Install
+Select Custom Windows Only > Hit Next > Let Windows Install
  ![image](https://github.com/user-attachments/assets/46d6b08c-21d4-4e19-a9ae-1c2df3f78946)
 
 Select Where you want to install Windows (I selected the Default)
@@ -130,7 +130,7 @@ Select Where you want to install Windows (I selected the Default)
 
  
  
-*Once done install a web browser. Also, take a snapshot of your VM for best practices
+Once done install a web browser. Also, take a snapshot of your VM for best practices
 ![image](https://github.com/user-attachments/assets/50d602e7-db2e-4e31-b4bc-b8e31a8b566d)
 
 ## Step 5: Installing Sysmon
@@ -169,7 +169,7 @@ Ensure  that the “sysmonconfig.xml” Is in the same directory as “sysmon64.
 Re-check Service again to verify Sysmon is installed: Windows Key + R > Services.msc > look for Sysmon64
 ![image](https://github.com/user-attachments/assets/210ec869-c24d-461a-b752-9409e8129f2d)
 
-## Step 6: Installing Wazuh<br/>
+## Step 6: Installing Wazuh
 Disclaimer: There are other ways of doing this – My HOST Computer does not have enough resources for me to host another VM therefore I followed the video (in resources) to host the Wazuh client on the cloud. <br/>
 
 On your HOST Computer head to Digital Ocean > Create your Account > Create > Droplets (Droplets are VMs)
