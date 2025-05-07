@@ -15,7 +15,7 @@ Our objective for this seciton is to Configure TheHive and Wazuh Servers and ver
 <l3>Nano – linux text editor </l3><br/>
 </ul>
 
-# Links 
+# Links:
 <ul>
 	<a href="https://www.youtube.com/watch?v=VuSKMPRXN1M&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=8&t=6s">SOC Automation Project - MyDFIR</a>
 </ul>
