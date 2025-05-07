@@ -21,6 +21,7 @@ Configure TheHive and Wazuh Servers up and running properly & have a windows 10 
 	<a href ="">Step 1: Configure TheHIVE</a>
 	<a href ="">Step 2: Configuring the Wazuh Server</a>
 </ul>
+
 ## Step 1: Configure TheHIVE<br/>
 
 ### 1a. Configuring Cassandra 
