@@ -1,14 +1,14 @@
 # Objective:
 Our objective for this seciton is to Configure TheHive and Wazuh Servers and verify that they are up and running properly. we will also be configuring a Windows 10 client and ensure that it is reporting to our Wazuh server.
 
-# Skills
+# Skills:
 <ul>
 	<l1>1.	Learned how to configure TheHive</l1><br/>
 	<l2>2.	Learned how to configure a Wazuh server</l2><br/>
 	<l3>3.	Configured a Windows 10 Virtual Machine to report to Wazuh</l3><br/>
 </ul>
 
-# Tools
+# Tools:
 <ul>
 <l1>Cassandra – Used for theHive’s database</l1><br/>
 <l2>Elastic Search – used to mangae data indices (querying data)</l2><br/>
@@ -20,7 +20,7 @@ Our objective for this seciton is to Configure TheHive and Wazuh Servers and ver
 	<a href="https://www.youtube.com/watch?v=VuSKMPRXN1M&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=8&t=6s">SOC Automation Project - MyDFIR</a>
 </ul>
 
-# Steps 
+# Steps: 
 <ul>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-1-configure-thehive">Step 1: Configure TheHIVE</a><br/>
 	<ul>
