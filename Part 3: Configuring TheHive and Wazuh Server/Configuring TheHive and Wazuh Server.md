@@ -1,5 +1,5 @@
 # Objective:
-Configure TheHive and Wazuh Servers up and running properly & have a Windows 10 client reporting into the Wazuh server.
+Our objective for this seciton is to Configure TheHive and Wazuh Servers and verify that they are up and running properly. we will also be configuring a Windows 10 client and ensure that it is reporting to our Wazuh server.
 
 # Skills
 <ul>
