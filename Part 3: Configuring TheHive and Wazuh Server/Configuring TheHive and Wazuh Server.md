@@ -25,9 +25,9 @@ Our objective for this seciton is to Configure TheHive and Wazuh Servers and ver
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-1-configure-thehive">Step 1: Configure TheHIVE</a><br/>
 	<ul>
 		<l1> <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1a-configuring-cassandra">1a. Configuring Cassandra</a></l1><br/>
-		<l2> <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1b-configure-elastic-search--open-up-the-elasticsearch-config-file">1b. Configure Elastic Search – Open up the elasticsearch config file </a></l2><br/>
+		<l2> <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1b-configure-elastic-search--open-up-the-elasticsearch-config-file">1b. Configuring Elastic Search </a></l2><br/>
 		<l3><a href = "https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1c-finalizing-thehive-">1c: Finalizing TheHive.</a></l3><br/>
-		<l4><a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1d-verifying-functionality-of-thehive-" >1d. Verifying Functionality of TheHive </a></l4><br/>
+		<l4><a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1d-verifying-functionality-of-thehive-" >1d. Verifying functionality of TheHive </a></l4><br/>
 	</ul><br/>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-2-configuring-wazuh-">Step 2: Configuring the Wazuh Server</a><br/>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-3-configuring-our-windows-10-vm">Step 3: Configuring Our Windows 10 VM</a>
@@ -90,6 +90,7 @@ Verify that Cassandra is running<br/>
 ![image](https://github.com/user-attachments/assets/73aab443-2151-45a8-a6d6-b65e6ea6c663)
 ____________________________________________________________________________________________
 ### 1b. Configuring Elastic Search<br/>
+Open up the elasticsearch config file 
 
 	Root > nano /etc/elasticsearch/elasticsearch.yml
 ![image](https://github.com/user-attachments/assets/90aa04e3-4d98-4698-8111-3af1532abbc7)
