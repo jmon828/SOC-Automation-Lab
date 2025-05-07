@@ -24,10 +24,10 @@ Configure TheHive and Wazuh Servers up and running properly & have a Windows 10 
 <ul>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-1-configure-thehive">Step 1: Configure TheHIVE</a><br/>
 	<ul>
-		<l1 href="">1a. Configuring Cassandra</l1><br/>
-		<l2 href="">1b. Configure Elastic Search – Open up the elasticsearch config file</l2><br/>
-		<l3 href = "">1c: Finalizing TheHive. </l3><br/>
-		<l4 href ="" >1d. Verifying TheHive </l4><br/>
+		<l1 href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1a-configuring-cassandra">1a. Configuring Cassandra</l1><br/>
+		<l2 href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1b-configure-elastic-search--open-up-the-elasticsearch-config-file">1b. Configure Elastic Search – Open up the elasticsearch config file</l2><br/>
+		<l3 href = "https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1c-finalizing-thehive-">1c: Finalizing TheHive. </l3><br/>
+		<l4 href ="" >1d. Verifying Functionality of TheHive </l4><br/>
 	</ul>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-2-configuring-wazuh-">Step 2: Configuring the Wazuh Server</a>
 </ul>
@@ -146,7 +146,7 @@ Scroll down a bit again to change hostname to TheHives public IP > Scroll down t
 ![image](https://github.com/user-attachments/assets/e62ea7c6-a7f1-4647-81d0-003ad505e550)
 ![image](https://github.com/user-attachments/assets/3dad9539-8086-441a-a29f-d4dffe23a6a0)
 _______________________________________________________________________________________________________________________________________
-### 1d. Verifying TheHive <br/>
+### 1d. Verifying Functionality of TheHive <br/>
 
 	Root > systemctl start thehive> systemctl enable thehive > systemctl status thehive
 ![image](https://github.com/user-attachments/assets/8d44d884-9185-430e-b5de-74dc2900929b)
