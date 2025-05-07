@@ -89,7 +89,7 @@ Verify that Cassandra is running<br/>
 	Root > systemctl status Cassandra.service
 ![image](https://github.com/user-attachments/assets/73aab443-2151-45a8-a6d6-b65e6ea6c663)
 ____________________________________________________________________________________________
-### 1b. Configure Elastic Search – Open up the elasticsearch config file<br/>
+### 1b. Configuring Elastic Search<br/>
 
 	Root > nano /etc/elasticsearch/elasticsearch.yml
 ![image](https://github.com/user-attachments/assets/90aa04e3-4d98-4698-8111-3af1532abbc7)
