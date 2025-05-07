@@ -5,7 +5,7 @@ Configure TheHive and Wazuh Servers up and running properly & have a Windows 10 
 <ul>
 	<l1>1.	Learned how to configure TheHive</l1><br/>
 	<l2>2.	Learned how to configure a Wazuh server</l2><br/>
-	<l3>3.	Configured a Windows 10 Machine to report to Wazuh</l3><br/>
+	<l3>3.	Configured a Windows 10 Virtual Machine to report to Wazuh</l3><br/>
 </ul>
 
 # Tools
@@ -30,7 +30,7 @@ Configure TheHive and Wazuh Servers up and running properly & have a Windows 10 
 		<l4><a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1d-verifying-functionality-of-thehive-" >1d. Verifying Functionality of TheHive </a></l4><br/>
 	</ul><br/>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-2-configuring-wazuh-">Step 2: Configuring the Wazuh Server</a><br/>
-	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-2-configuring-wazuh-">Step 3: Configuring Our Windows 10 VM</a>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-3-configuring-our-windows-10-vm">Step 3: Configuring Our Windows 10 VM</a>
 </ul>
 </ul>
 
