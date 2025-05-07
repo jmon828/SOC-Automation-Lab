@@ -1,86 +1,102 @@
-## Objective:
+# Objective:
 Configure TheHive and Wazuh Servers up and running properly & have a windows 10 client Reporting into the Wazuh server.
 
-## Skills
+# Skills
 <ul>
 <l1>1.	As</l1>
 </ul>
 
-## Tools/Commands
+# Tools/Commands
 <ul>
 <l1>Cassandra – Used for theHive’s database</l1><br/>
 <l2>Elastic Search – used to mangae data indices (querying data)</l2><br/>
 <l3>Nano – linux text editor </l3><br/>
 </ul>
 
-## Links 
+# Links 
 <a href="https://www.youtube.com/watch?v=VuSKMPRXN1M&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=8&t=6s">SOC Automation Project - MyDFIR</a>
 
-## Steps 
-Step 1: Configure TheHIVE<br/>
+# Steps 
+<ul>
+	<a href ="">Step 1: Configure TheHIVE</a>
+	<a href ="">Step 2: Configuring the Wazuh Server</a>
+</ul>
+## Step 1: Configure TheHIVE<br/>
 
-1a. Configuring Cassandra 
+### 1a. Configuring Cassandra 
 PuTTY (or SSH) into HIVE Server
+
 	Copy public IP > Open PuTTY > Paste ip > Login
 ![image](https://github.com/user-attachments/assets/adc36c69-859a-4d9d-aeb1-aab0c240fad7)
 ![image](https://github.com/user-attachments/assets/e49c8353-6c41-4d99-8c3e-952c9142f179)
 
 From the previous day, we installed multiple components. One of those components was Cassandra.<br/>
-Edit Cassandra’s config file: Root> nano /etc/cassandra/Cassandra.yaml
+
+	Edit Cassandra’s config file: Root> nano /etc/cassandra/Cassandra.yaml
 ![image](https://github.com/user-attachments/assets/4fbec270-ba2d-45ea-98ef-448063cdd990)
 ![image](https://github.com/user-attachments/assets/3405923e-fd89-4056-9403-280b6c755d72)
 
 From here we will customize our listen address or ports along with the cluster name.<br/>
+
 	Use arrow keys to change “Cluster_name” – you can change this to what ever name you want!
 ![image](https://github.com/user-attachments/assets/c7618fde-3de2-44aa-a9f5-2c568fef0949)
 
 Next we want to find the listen address and RPC address<br/>
+
 	Hold CTRL + W > search for listen > change “listen_address” (Enter Public IP of THE Hive)
 ![image](https://github.com/user-attachments/assets/1cd0a798-1db8-4a30-a02c-4de7eb64442d)
 
 Next we want to find RPC address<br/>
+
 	Again Hold CTRL+W > Search for “RPC” > change “rpc_address” (Enter Public IP of The HIVe)
 ![image](https://github.com/user-attachments/assets/f86ba35a-07e9-41b5-9726-be246e8e09c6)
 
 Next we must change the Seed address<br/>
-Again Hold CTRL+W > Search for “seed” > change “seeds” (Enter Public IP of The Hive – keep the port number do not change it) > CTL + X > Y (This saves and exits the nano editor)
+
+	Again Hold CTRL+W > Search for “seed” > change “seeds” (Enter Public IP of The Hive – keep the port number do not change it) > CTL + X > Y (This saves and exits the nano editor)
 ![image](https://github.com/user-attachments/assets/58231d78-bb75-4e2a-a04a-0ef652f7fc20)
 
 Next we will stop the Cassandra service<br/>
+
 	Root > systemctl stop Cassandra.service
 ![image](https://github.com/user-attachments/assets/030b390d-6be9-43fc-8f48-c81fdf334877)
 
 Since we installed TheHive using their package, we will now remove old files<br/>
+
 	Root > rm -rf /var/lib/Cassandra/*
 ![image](https://github.com/user-attachments/assets/312db691-0a75-48c3-85ce-71f6a70dfd1a)
 
 Now that the old files have been remove, we can start (Cassandra) it back up again<br/>
+
 	Root > systemctl start Cassandra.service
 ![image](https://github.com/user-attachments/assets/c6899c8d-0619-4677-bafc-1aca67872e8b)
 
 Verify that Cassandra is running<br/>
+
 	Root > systemctl status Cassandra.service
 ![image](https://github.com/user-attachments/assets/73aab443-2151-45a8-a6d6-b65e6ea6c663)
 _______________________________________________________________________________________________________________________
-1b. Configure Elastic Search – Open up the elasticsearch config file<br/>
+### 1b. Configure Elastic Search – Open up the elasticsearch config file<br/>
+
 	Root > nano /etc/elasticsearch/elasticsearch.yml
 ![image](https://github.com/user-attachments/assets/90aa04e3-4d98-4698-8111-3af1532abbc7)
 ![image](https://github.com/user-attachments/assets/a02b5be1-bdad-4524-bac7-8f48b85b2188)
 
 Here we will change Cluster name, node.name, network.host<br/>
-Scroll down to cluster.name > delete the comment (“#”) > Change the name to “thehive”
+
+	Scroll down to cluster.name > delete the comment (“#”) > Change the name to “thehive”
 ![image](https://github.com/user-attachments/assets/038d85a5-be52-4e52-88d3-6d77c3d8d4aa)
 
-Scroll down to node.name > Delete the comment (“#”) > Leave as is
+	Scroll down to node.name > Delete the comment (“#”) > Leave as is
 ![image](https://github.com/user-attachments/assets/4e0514ad-c4bf-4a96-b0cb-9d3cf051649f)
 
-Scroll do to network host > Delete the comment (“#”) > change ip to public ip of the hive
+	Scroll do to network host > Delete the comment (“#”) > change ip to public ip of the hive
 ![image](https://github.com/user-attachments/assets/208339a4-4e3b-4e2b-a595-d3901bdfa475)
 
-Scroll down to http port > Delete the comment (“#”) > leave as is
+	Scroll down to http port > Delete the comment (“#”) > leave as is
 ![image](https://github.com/user-attachments/assets/323db8cc-fc14-44ef-9c00-fba635b704a5)
 
-Scroll down to cluster.initial_master_nodes > Delete the comment (“#”) > delete “, node -2” – since I only have one node > CTRL + X > Y – to save
+	Scroll down to cluster.initial_master_nodes > Delete the comment (“#”) > delete “, node -2” – since I only have one node > CTRL + X > Y – to save
 ![image](https://github.com/user-attachments/assets/5116dc78-b44e-43d2-bc94-02912c7da784)
 
 Start the elasticsearch service 
@@ -88,8 +104,8 @@ Start the elasticsearch service
 	Root > systemctl start elasticsearch > systemctl enable elastic search > systemctl status elastic search (to verify)
 ![image](https://github.com/user-attachments/assets/b95f8761-3418-4c25-b879-64c8ada5410b)
 
-____________________________________________________________________________________________________________________________________________________
-1c: Next we will be configuring TheHive. But before we get started we wan to make sure that TheHives User & groups have access to a certain file path.
+_______________________________________________________________________________________________________________________________________
+### 1c: Next we will be configuring TheHive. But before we get started we wan to make sure that TheHives User & groups have access to a certain file path.
 
 	Root > ls -la /opt/thp
 ![image](https://github.com/user-attachments/assets/ba0d8455-4c1f-4fe4-bd32-21efdd46fc92)
@@ -117,14 +133,15 @@ Once you are in, Change the following:<br/>
 Scroll down a bit again to change hostname to TheHives public IP > Scroll down to application.baseUrl and change “localhost” to your public ip. >save
 ![image](https://github.com/user-attachments/assets/e62ea7c6-a7f1-4647-81d0-003ad505e550)
 ![image](https://github.com/user-attachments/assets/3dad9539-8086-441a-a29f-d4dffe23a6a0)
-____________________________________________________________________________________________________________________________________________________
-1d. Next we will start up TheHive
+_______________________________________________________________________________________________________________________________________
+### 1d. Next we will start up TheHive
 
 	Root > systemctl start thehive> systemctl enable thehive > systemctl status thehive
 ![image](https://github.com/user-attachments/assets/8d44d884-9185-430e-b5de-74dc2900929b)
 ![image](https://github.com/user-attachments/assets/3c2518b5-a874-4e12-8acd-015cf6901f17)
 
 Once that is done Verify that all services are running using the:<br/>
+
 	Root> systemctl status “Cassandra” , “ElasticSearch”, TheHIVE
 ![image](https://github.com/user-attachments/assets/400823c8-bf4f-483b-9da8-76851e06a172)
 ![image](https://github.com/user-attachments/assets/95224b40-e124-4225-8832-b0346328ca28)
@@ -153,10 +170,12 @@ Once you are in you can paste the following then save:<br/>
 	-Dlog4j2.formatmsgNoLookups=true
 	-Xms2g
 	-Xmx2g
+
 This will tell java to limit its memory usage to 2Gbs
 ![image](https://github.com/user-attachments/assets/2bc8e959-bb60-452a-aa6d-d1956d99036a)
 
 Once you have saved it you should now restart elastic search
+
 	Root > systemctl enable elasticsearch> Verify using Systemctl status elastic search
 ![image](https://github.com/user-attachments/assets/29c6fb37-fb55-412a-a49c-59c18a8cdfdc)
 
@@ -167,7 +186,7 @@ Once you have verified. Try logging in using the same default credentials!
 Once we are done we can now configure Wazuh!
 
 ____________________________________________________________________________________________
-Step 3: Configuring Wazuh <br/>
+Step 2: Configuring Wazuh <br/>
 Try logging into the wazuh dashboard using the default admin credentials. If you do not have that, like I do follow the next steps.
 	Verify if “wazuh-install-file.tar” is installed using the “ls" command
 ![image](https://github.com/user-attachments/assets/0c38c5f8-1f57-4dff-9e74-cce32ecd9222)
@@ -183,19 +202,20 @@ From here look for admin & wazuh api password (this will be used later in the pr
 ![image](https://github.com/user-attachments/assets/106092ac-7813-4265-b554-d4a2e85cf751)
 
 Once we are in we can now add an Agent
+
 	Click on Add Agent >
 ![image](https://github.com/user-attachments/assets/a4082955-543b-417c-b899-19f06ab4fa99)
 
-Select Windows > Server Address: Wazuh Public IP > Assign an Agent name: name (can be anything)
+	Select Windows > Server Address: Wazuh Public IP > Assign an Agent name: name (can be anything)
 ![image](https://github.com/user-attachments/assets/29111b62-f46e-4251-a711-651967d1a2e7)
 
-Next we can to copy the command & and open the windows 10 VM
+	Next we can to copy the command & and open the windows 10 VM
 ![image](https://github.com/user-attachments/assets/9a839ff7-882e-4c87-b5fd-4a09403fc311)
 
-On the VM machine Open up admin Powershell > Paste the command
+	On the VM machine Open up admin Powershell > Paste the command
 ![image](https://github.com/user-attachments/assets/c37365bd-87dc-41cc-b059-2f4006528175)
 
-Start Wazuh service: net START WazuhSvc
+	Start Wazuh service: net START WazuhSvc
 ![image](https://github.com/user-attachments/assets/6c760c9b-7e31-466e-939c-73a91009d66c)
 
 Verify Wazuh is running via Services:
@@ -204,5 +224,5 @@ Verify Wazuh is running via Services:
 Now Go back into Wazuh Portal and Now you should see an active Agent
 ![image](https://github.com/user-attachments/assets/f2cc5b9d-adaf-4096-a2bd-45ddecf3ddaf)
 
-Now that we have a client reporting into Wazuh. We can not query for events!
+Now that we have a client reporting into Wazuh. We can now query for events!
 ![image](https://github.com/user-attachments/assets/e5646e84-4e9b-4082-895a-b11a81376740)
