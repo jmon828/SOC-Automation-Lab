@@ -3,7 +3,7 @@ Configure TheHive and Wazuh Servers up and running properly & have a windows 10 
 
 # Skills
 <ul>
-<l1>1.	As</l1>
+	<l1>1.	As</l1>
 </ul>
 
 # Tools/Commands
