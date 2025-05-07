@@ -18,7 +18,7 @@ Configure TheHive and Wazuh Servers up and running properly & have a windows 10 
 
 # Steps 
 <ul>
-	<a href ="">Step 1: Configure TheHIVE</a>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-1-configure-thehive">Step 1: Configure TheHIVE</a>
 	<a href ="">Step 2: Configuring the Wazuh Server</a>
 </ul>
 
@@ -187,7 +187,7 @@ Once you have verified. Try logging in using the same default credentials!
 Once we are done we can now configure Wazuh!
 
 ____________________________________________________________________________________________
-Step 2: Configuring Wazuh <br/>
+## Step 2: Configuring Wazuh <br/>
 Try logging into the wazuh dashboard using the default admin credentials. If you do not have that, like I do follow the next steps.
 	Verify if “wazuh-install-file.tar” is installed using the “ls" command
 ![image](https://github.com/user-attachments/assets/0c38c5f8-1f57-4dff-9e74-cce32ecd9222)
