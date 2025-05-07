@@ -1,9 +1,11 @@
 # Objective:
-Configure TheHive and Wazuh Servers up and running properly & have a windows 10 client Reporting into the Wazuh server.
+Configure TheHive and Wazuh Servers up and running properly & have a Windows 10 client reporting into the Wazuh server.
 
 # Skills
 <ul>
-	<l1>1.	As</l1>
+	<l1>1.	Learned how to configure TheHive</l1>
+	<l2>2.	Learned how to configure a Wazuh server</l2>
+	<l3>3.	Configured a Windows 10 Machine to report to Wazuh</l3>
 </ul>
 
 # Tools/Commands
@@ -14,11 +16,19 @@ Configure TheHive and Wazuh Servers up and running properly & have a windows 10 
 </ul>
 
 # Links 
-<a href="https://www.youtube.com/watch?v=VuSKMPRXN1M&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=8&t=6s">SOC Automation Project - MyDFIR</a>
+<ul>
+	<a href="https://www.youtube.com/watch?v=VuSKMPRXN1M&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=8&t=6s">SOC Automation Project - MyDFIR</a>
+</ul>
 
 # Steps 
 <ul>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-1-configure-thehive">Step 1: Configure TheHIVE</a><br/>
+	<ul>
+		<l1 href="">1a. Configuring Cassandra</l1><br/>
+		<l2 href="">1b. Configure Elastic Search – Open up the elasticsearch config file</l2><br/>
+		<l3 href = "">1c: Finalizing TheHive. </l3><br/>
+		<l4 href ="" >1d. Verifying TheHive </l4><br/>
+	</ul>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-2-configuring-wazuh-">Step 2: Configuring the Wazuh Server</a>
 </ul>
 
@@ -106,7 +116,8 @@ Start the elasticsearch service
 ![image](https://github.com/user-attachments/assets/b95f8761-3418-4c25-b879-64c8ada5410b)
 
 _______________________________________________________________________________________________________________________________________
-### 1c: Next we will be configuring TheHive. But before we get started we wan to make sure that TheHives User & groups have access to a certain file path.
+### 1c: Finalizing TheHive. <br/>
+before we finalize we want to make sure that TheHives User & groups have access to a certain file path.
 
 	Root > ls -la /opt/thp
 ![image](https://github.com/user-attachments/assets/ba0d8455-4c1f-4fe4-bd32-21efdd46fc92)
@@ -135,7 +146,7 @@ Scroll down a bit again to change hostname to TheHives public IP > Scroll down t
 ![image](https://github.com/user-attachments/assets/e62ea7c6-a7f1-4647-81d0-003ad505e550)
 ![image](https://github.com/user-attachments/assets/3dad9539-8086-441a-a29f-d4dffe23a6a0)
 _______________________________________________________________________________________________________________________________________
-### 1d. Next we will start up TheHive
+### 1d. Verifying TheHive <br/>
 
 	Root > systemctl start thehive> systemctl enable thehive > systemctl status thehive
 ![image](https://github.com/user-attachments/assets/8d44d884-9185-430e-b5de-74dc2900929b)
@@ -202,6 +213,7 @@ From here look for admin & wazuh api password (this will be used later in the pr
 ![image](https://github.com/user-attachments/assets/977133fa-70a0-4d09-ba7a-5c4ebafc347f)
 ![image](https://github.com/user-attachments/assets/106092ac-7813-4265-b554-d4a2e85cf751)
 
+Step 3: Configuring an Agent
 Once we are in we can now add an Agent
 
 	Click on Add Agent >
