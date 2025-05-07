@@ -18,8 +18,8 @@ Configure TheHive and Wazuh Servers up and running properly & have a windows 10 
 
 # Steps 
 <ul>
-	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-1-configure-thehive">Step 1: Configure TheHIVE</a>
-	<a href ="">Step 2: Configuring the Wazuh Server</a>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-1-configure-thehive">Step 1: Configure TheHIVE</a><br/>
+	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-2-configuring-wazuh-">Step 2: Configuring the Wazuh Server</a>
 </ul>
 
 ## Step 1: Configure TheHIVE<br/>
