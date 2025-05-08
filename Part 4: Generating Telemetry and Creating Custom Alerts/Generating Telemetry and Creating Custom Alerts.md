@@ -1,25 +1,33 @@
-## Objective
+# Objective
 Generate Telemetry from our Windows 10 Machine and ensure that it is being ingested into Wazuh
-## Skills
-Configured Wazuh
-Sent Telemetry that contained Mimikatz
-Created a custom alert that gets triggered if Mimikatz is activated
-## Tools
-Mimikatz – is an application that attackers/redteamers use to extract credentials from your machine
+#  Skills
+<ul>
+  1. Configured Wazuh<br/>
+  2. Sent Telemetry that contained Mimikatz<br/>
+  3. Created a custom alert that gets triggered if Mimikatz is activated<br/>
+</ul>
 
-## Links
+# Tools
+<ul>
+  Mimikatz – is an application that attackers/redteamers use to extract credentials from your machine<br/>
+</ul>
+
+# Links
 
 
-## Steps
-Step 1: configure Windows 10 Telemetry
-Open you VM > File Explorer > File Path: This PC\LocalDisk\Program Files (x86)\ossec-agent\ > ossec .conf > Open with Notepad
+# Steps
+<ul>
+  
+</ul>
+
+## Step 1: configure Windows 10 Telemetry<br/>
+
+    Open you VM > File Explorer > File Path: This PC\LocalDisk\Program Files (x86)\ossec-agent\ > ossec .conf > Open with Notepad
 ![image](https://github.com/user-attachments/assets/79639c1a-e37a-41cc-ad4f-7871eefa6251)
 ![image](https://github.com/user-attachments/assets/b8fc7652-1c55-4762-a5cf-9515b11e2487)
 ![image](https://github.com/user-attachments/assets/8cf8569b-7b4b-4a3b-bcc7-735899b6674f)
 ![image](https://github.com/user-attachments/assets/b29a82fe-43ba-4bd7-a698-f6f3f65ea85d)
 ![image](https://github.com/user-attachments/assets/fa938a24-5f4a-4cac-8b82-b019b656e588)
-
-
 
 
 
@@ -31,7 +39,7 @@ Once we open up osse.conf and scroll a little bit, we will see a section called 
 If you wanted to monitor for Powershell (for example) you can copy and follow that same syntax as the <local file>. But in this project, we want to look for processes that involve and contain Mimikatz. In order to do that, we must install Sysmon, which we did on day 2! Since we did that in day 2 lets configure our Ossec.conf file!<br/>
 
 
-Step 2: Configuring ossec.configuration to ingest Sysmon logs
+## Step 2: Configuring ossec.configuration to ingest Sysmon logs<br/>
 First, it is beast practice to create a back up the config file in case any problems come up
 ![image](https://github.com/user-attachments/assets/294013ab-55e1-42fe-93d2-54e8bd80dbbd)
 ![image](https://github.com/user-attachments/assets/6be47028-c11b-44ba-a5f6-a1f0ab738288)
@@ -47,7 +55,8 @@ Next we want to copy one of the <local file> tags and right underneath it we wil
 
 
 Now that we have done that. We can now change the <location> name from “Application” to Sysmon’s channel name. To do that:<br/>
-Event viewer > Expand Applications and Services Logs > Expand Microsoft > Expand Windows >Expand Sysmon > Right Click operational > Properties >  Copy Full name
+
+    Event viewer > Expand Applications and Services Logs > Expand Microsoft > Expand Windows >Expand Sysmon > Right Click operational > Properties >  Copy Full name
 ![image](https://github.com/user-attachments/assets/bb26167e-7183-40a8-bb54-684163ccbcf4)
 ![image](https://github.com/user-attachments/assets/2b1e0e26-f42f-4d30-be3c-71789df79428)
 ![image](https://github.com/user-attachments/assets/5a6f9010-8bd6-4b1d-ba76-045b46452506)
@@ -69,14 +78,15 @@ Removing these essentially means that, they will no longer forward events to our
 If you ever get this error:
 ![image](https://github.com/user-attachments/assets/c6bb3661-ec0f-4220-8a19-fac08ddbf3ae)
 
-Copy the Sysmon local file > open administrator notepad > File (Top) > Open > Drop Down – All files > ossec > make changes > save
+    Copy the Sysmon local file > open administrator notepad > File (Top) > Open > Drop Down – All files > ossec > make changes > save
 ![image](https://github.com/user-attachments/assets/2187bb71-a69f-47c6-80f4-34c5b3bc48e6)
 ![image](https://github.com/user-attachments/assets/38d2994d-a9a5-4bbe-ace6-2213f94d6711)
 
 
 
 Next we will now restart our Wazuh Service on our VM – Everytime you make a change in the The Wazuh config file you must restart the service
-Open services > Find Wazuh > Right click> Restart
+
+    Open services > Find Wazuh > Right click> Restart
 ![image](https://github.com/user-attachments/assets/b04e10f7-7c57-436f-a049-df3767fa7cdb)
 ![image](https://github.com/user-attachments/assets/6f8bb2a1-6b25-4195-a9ec-00e0f0884cd7)
 
@@ -90,7 +100,7 @@ Switch to the Events tab and ensure we are under “wazuh-alerts” index
 Next, we can now search for Sysmon events- this might take some time; therefore, if you do not see anything at first, that is perfectly fine!<br/>
 ![image](https://github.com/user-attachments/assets/6201def2-7271-438f-886d-e7ab02cd8ef3)
 
-Step 3: Installing Mimikatz on to our VM<br/>
+## Step 3: Installing Mimikatz on to our VM<br/>
 Prior to installing mimikatz, we want to disable Windows Defender or exclude our downloads folder on our VM as it will detect it.
 Mimikatz – is an application that attackers/redteamers use to extract credentials from your machine
 Open VM > Windows Security > Virus & Threat Protection > Manage threat & Protection Settings: Manage Settings > Exclusions: Add or Remove exclusions > Add an Exclusion: Folder > Select Downloads Folder > Yes
@@ -124,43 +134,47 @@ Open an Administrator Powershell > Change directory to Mimikatz file path – co
 
 
 
-Step 4: Now we can move on to Creating a Wazuh alert<br/>
+## Step 4: Creating a Wazuh alert<br/>
 
 If you log into Wazuh and try searching for Mimikatz. By default, an alert will not show up as Wazuh does not log everything. To fix this we must configure a rule or alert to be triggered.
 ![image](https://github.com/user-attachments/assets/cd6e21eb-658e-42d3-9c8f-7b9779708d6b)
 
 
 Modifying the Ossec Configuration to log everything
-Ssh into you Wazuh Manager CLI (I'm using PuTTY) > Copy and paste the ossec.conf file: cp /var/ossec/etc/ossec.conf ~/ossec-backup.conf > Open conf file using nano: nano /var/ossec/etc/ossec.conf
+
+    Ssh into you Wazuh Manager CLI (I'm using PuTTY) > Copy and paste the ossec.conf file: cp /var/ossec/etc/ossec.conf ~/ossec-backup.conf > Open conf file using nano: nano /var/ossec/etc/ossec.conf
 ![image](https://github.com/user-attachments/assets/a43db949-7ab6-4a20-8744-d590ba34210c)
 ![image](https://github.com/user-attachments/assets/749035a1-a82d-4cbb-9e27-359ec3d42bfe)
 ![image](https://github.com/user-attachments/assets/b420e2a4-3517-48f8-afcf-45fe090e5b4c)
 
 
 
-Once the configuration file has opened> scroll to “<logall>” and “<log_json>” > Change the  “no” to a yes” > Save
+    Once the configuration file has opened> scroll to “<logall>” and “<log_json>” > Change the  “no” to a yes” > Save
 ![image](https://github.com/user-attachments/assets/d9772132-8edd-40fe-8dba-882943b6bbe3)
 ![image](https://github.com/user-attachments/assets/519e46e3-b1a7-46b0-ad45-013bdb750710)
 ![image](https://github.com/user-attachments/assets/b292820f-7d50-42d8-9ed6-5d5f3284d540)
 
 
-Once after being saved > Restart the Wazuh Manager: systemctl restart wazuh-manager.service
+    Once after being saved > Restart the Wazuh Manager: systemctl restart wazuh-manager.service
 ![image](https://github.com/user-attachments/assets/93cd46f9-6df6-4a94-ab72-5e802eb87ffd)
 
 This forces Wazuh to start archibving all the logs and puts them into a file called “archives”. This file will be located in /var/ossec/logs/archive
 ![image](https://github.com/user-attachments/assets/9d87fd5f-5bbe-456b-a93a-343fb4803a4b)
 
 For Wazuh to start ingesting these logs we would need to change our configuration in “filebeat”
-SSH > Root> cd /var/ossec/logs/archive > nano /etc/filebeat/filebeat.yml > scroll to “filebeat.modules” > archives enabled: true > Save
+
+    SSH > Root> cd /var/ossec/logs/archive > nano /etc/filebeat/filebeat.yml > scroll to “filebeat.modules” > archives enabled: true > Save
 ![image](https://github.com/user-attachments/assets/f4a7a592-0516-41e7-9ae6-551fd336209b)
 ![image](https://github.com/user-attachments/assets/dff7039d-0585-477c-ab40-89ce73d93987)
 
 
-Once we updated the filebeat.yml file we must restart the Wazuh Manager- command : systemctl restart filebeat
+Once we updated the filebeat.yml file we must restart the Wazuh Manager<br/>
+
+    command : systemctl restart filebeat
 ![image](https://github.com/user-attachments/assets/7af13c8c-e4f2-4a2b-a63a-d1012b9e7580)
 
-Step 5: Create a new index<br/>
-On our Wazuh Dashboard click on the hamburger > Scroll to Stack Management > Click on Index Patterns
+## Step 5: Creating a New Index<br/>
+    On our Wazuh Dashboard click on the hamburger > Scroll to Stack Management > Click on Index Patterns
 ![image](https://github.com/user-attachments/assets/9cedd125-6e69-42dd-926e-947a87541913)
 ![image](https://github.com/user-attachments/assets/f80aa312-ca3d-4e9a-8f5e-e4a3dd15d9dd)
 ![image](https://github.com/user-attachments/assets/13432ef2-1cb2-4688-b181-543cf14c77c7)
@@ -168,31 +182,35 @@ On our Wazuh Dashboard click on the hamburger > Scroll to Stack Management > Cli
 
 
 
-b. we want to create an index for archives, so that we can search all the logs. Regardless if Wazuh triggered an alert.<br/>
-Create index pattern > Index Pattern Name: wazuh-archives-** > Next Step Button > Time field: timestamp > Create index pattern.
+### 5a. we want to create an index for archives, so that we can search all the logs. Regardless if Wazuh triggered an alert.<br/>
+    Create index pattern > Index Pattern Name: wazuh-archives-** > Next Step Button > Time field: timestamp > Create index pattern.
 ![image](https://github.com/user-attachments/assets/6aff11f1-0833-47fa-8971-e19496bfce72)
 ![image](https://github.com/user-attachments/assets/98cb6e77-8841-4077-acd9-d611324406af)
 ![image](https://github.com/user-attachments/assets/ca0d39fa-788a-4b5d-9d0a-eef4328cf5bb)
 
 
 
-C. head to Discover and filter for archives
-Top right Hamburger > Discover > Select indexes through the Drop down arrow > wazuh archives
+### 5b. head to Discover and filter for archives<br/>
+
+    Top right Hamburger > Discover > Select indexes through the Drop down arrow > wazuh archives
 ![image](https://github.com/user-attachments/assets/5e0ac41c-e474-43c3-b91f-3939dfbd2e10)
 ![image](https://github.com/user-attachments/assets/dbbbb1c6-d628-4f5c-bdd2-838e23b89e75)
 
 
-Step 6: Troubleshooting incoming events
+### Step 6: Troubleshooting incoming events<br/>
+
 By default not all logs will show in the manager. Only those that trigger a rule will show up. That is why we had to configure the logs to log everything. Making it so regardless of a rule being triggered or not we want the manager to archive it and allow us to search for them alert. Wazuh not showing all the logs is great but since we are testing it would hinder us.
 SSH into Wazuh Manager> root > cd /var/ossec/logs/archives
 ![image](https://github.com/user-attachments/assets/8881fb0d-2361-4c5c-8536-8cbc98c038a4)
 
 To Troubleshoot: <br/>
-Root > /var/ossec/logs/archives > cat archives.json | grep -i mimikatz
+
+    Root > /var/ossec/logs/archives > cat archives.json | grep -i mimikatz
 ![image](https://github.com/user-attachments/assets/bc0ae9ed-979b-48b0-890d-cbcdacd7a147)
 
 If you do not see any alerts on Wazuh . Then the mimikatz event did not generate! The next thing we can do is to regenerate it!<br/>
-Windows VM > Admin Powershell > cd C:\Users\User\Downloads\mimikatz_trunk\x64 > .\mimikatz.exe
+
+    Windows VM > Admin Powershell > cd C:\Users\User\Downloads\mimikatz_trunk\x64 > .\mimikatz.exe
 ![image](https://github.com/user-attachments/assets/1cf8310a-2ded-4b6a-a463-4edd84e022b2)
 
 While were on the Windows 10 VM we can also check event viewer to check if Sysmon is capturing mimikatz. We want to look for event ID 1 <br/>
@@ -222,10 +240,10 @@ If you expand on this event you can scroll down find the originalFilename
 
 We will be using this field to create our alert. If we were to use a field such as “data.win.eventdata.image” an attacker can simply rename mimikatz into mimicow and the alert can be bypassed but if we utilize the original filename regardless of the name change the alert should still be triggered<br/>
 
-Step 7: Creating a Rule<br/>
+### Step 7: Creating a Rule<br/>
 Wazuh has built-in tools that we can utilize that we can reference that is stored in /var/ossec/ruleset/rules. This file path is on Wazuh Managers CLI. But since I'm still kind of new to Wazuh I would like to explore Wazuh’s GUI instead!<br/>
 
-Wazuh Hompage > Click on Drop-down > Management > Rules > Manage Rules Files>
+    Wazuh Hompage > Click on Drop-down > Management > Rules > Manage Rules Files>
 ![image](https://github.com/user-attachments/assets/6ffd20b4-8624-4b75-8b6e-1791b9c4f6c7)
 ![image](https://github.com/user-attachments/assets/354238bd-eda6-45b9-a8c3-89fb14409fd8)
 ![image](https://github.com/user-attachments/assets/4409a02b-0784-4a83-96f9-4bb030afb900)
@@ -285,17 +303,18 @@ After that we will save it and restart the Manager
 
 
 
-Step 7: Testing the Rule<br/>
+### Step 8: Testing the Rule<br/>
 To test the rule We will be changing the filename of mimikatz to see if an alert is triggered. Since we configured the alert to trigger on the original filename and not the imagefile, it should show in our dashboard!<br/>
-Windows 10 VM > Navigate to the Mimikatz.exe > Rename: any name
+
+    Windows 10 VM > Navigate to the Mimikatz.exe > Rename: any name
 ![image](https://github.com/user-attachments/assets/44a77cd2-fad0-4385-9c8b-fca68da50746)
 ![image](https://github.com/user-attachments/assets/6b7e5f23-0eac-41fc-b2c9-fa9662d9886c)
 
 
 
 Next we want to head to run the renamed Mimkatz and check our dashboard to see if it triggered!<br/>
-Admin Powershell > cd C:\Users\User\Downloads\mimikatz_trunk\x64 > command: .\youareawesome > Check your Dashboard
 
+    Admin Powershell > cd C:\Users\User\Downloads\mimikatz_trunk\x64 > command: .\youareawesome > Check your Dashboard
 ![image](https://github.com/user-attachments/assets/597ee421-ecf9-4c2d-a539-839bcecaa47a)
 ![image](https://github.com/user-attachments/assets/0e70fda2-86c8-4afc-81b8-c28e93a89036)
 
