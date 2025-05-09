@@ -404,6 +404,8 @@ To verify:
 
     Open notepad > Copy and paste  onto the notepad > change “os.path.expander” to your downloads file path > save as “remove-threat.py” file
 
+
+
 Now that we have created the script its time to convert the active response script into a Windows Executable.
 Open admin Powershell > Change to downloads folder (or wherever you saved your python script > type the command: pyinstaller remove-threat.py
 
