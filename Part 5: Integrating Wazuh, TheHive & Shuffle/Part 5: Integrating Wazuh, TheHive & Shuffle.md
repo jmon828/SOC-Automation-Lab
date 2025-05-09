@@ -3,15 +3,15 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
 
 # Skills:
 <ul>
-    A
+    1. 
 </ul
     
 # Tools:
 <ul>
-    Shuffle
-    TheHive
-    VirusTotal
-    ChatGPT
+    Shuffle- Automation
+    TheHive- Case management tool 
+    VirusTotal- 
+    ChatGPT - 
     Temp-mail.io – Temporary mailbox
     Pyinstaller – converts script into executable
 </ul>
@@ -416,13 +416,16 @@ Head over to the Ossec-agent folder > click on active-response > bin > Paste the
 
 Head into powershell and restart the service using the command: Restart-Service -Name wazuh
 
-7g. Configuring the Wazuh server
-SSH into Wazuh Server > Look for <command> block > Paste the code :
+### 7g. Configuring the Wazuh server
+
+    SSH into Wazuh Server > Look for <command> block > Paste the code :
+
+<ul>
 <command>
     <name>remove-threat</name>
     <executable>remove-threat.exe</executable>##Ensure this is your .exe filename
     <timeout_allowed>no</timeout_allowed>
-  </command>
+</command>
 
   <active-response>
     <disabled>no</disabled>
@@ -430,11 +433,11 @@ SSH into Wazuh Server > Look for <command> block > Paste the code :
     <location>local</location>
     <rules_id>100092</rules_id>
   </active-response>
-
+</ul>
 
 And then save!
 
-7H. Configuring our Shuffle Workflow
+### 7h. Configuring our Shuffle Workflow
 
 Now that we have configured the Active response on our  Wazuh server. We will now modify our shuffle workflow to implement it! The 4 things we will be adding:
 A HTTP request icon that will curl for a JWT token from Wazuh on port 55000.
