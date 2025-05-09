@@ -447,11 +447,11 @@ And then save!
 
 Now that we have configured the Active response on our  Wazuh server. We will now modify our shuffle workflow to implement it! The 4 things we will be adding:
 <ul>
-    A HTTP request icon that will curl for a JWT token from Wazuh on port 55000.
-    A user input icon that will take the user input from the SOC Analyst, with an embedded True and False link in the email.
-    A Wazuh application that will run an active response command.
-    Lastly, an email will inform the SOC Analyst that the Threat has been neutralized.
-<ul/>
+    A HTTP request icon that will curl for a JWT token from Wazuh on port 55000.<br/>
+    A user input icon that will take the user input from the SOC Analyst, with an embedded True and False link in the email.<br/>
+    A Wazuh application that will run an active response command.<br/>
+    Lastly, an email will inform the SOC Analyst that the Threat has been neutralized.<br/>
+</ul>
     
 Log into Shuffle and add the “http”  icon to the Workflow and rename it to GET_API. Drag the icon in between the SHA-256 Regex and VirusTotal icons. Once you have placed the icon in between. Connect SHA 256 Regex icon to the GET_API icon and connect the Get_API icon to the Virus total Icon. *See below for reference
 ![image](https://github.com/user-attachments/assets/f6b7de96-7db0-4824-9f20-4083a570e559)
@@ -470,6 +470,7 @@ Paste the Text below abd paste it in the Information field:
 
     Mimikatz activity detected on host: $exec.text.win.system.computer and the processID is: $exec.text.win.system.processID and the command line is: $exec.text.win.eventdata.commandLine
     Choose whether you approve or deny the deletion of the Mimikatz file from the system.
+
 ![image](https://github.com/user-attachments/assets/79935209-f12d-468b-b3a2-5667c80317f1)
 
 Next we will now add and configure Wazuh. In Shuffle Install the Wazuh application by clicking on it. After installation, drag the icon onto your workflow.  And connect the User Input to the Wazuh Icon.
