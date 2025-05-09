@@ -403,75 +403,95 @@ To verify:
 ### 7f. Creating an Active response Script
 
     Open notepad > Copy and paste  onto the notepad > change “os.path.expander” to your downloads file path > save as “remove-threat.py” file
+![image](https://github.com/user-attachments/assets/a96cbfca-d95d-467e-955f-86690aa4a4fd)
 
 
 
-Now that we have created the script its time to convert the active response script into a Windows Executable.
-Open admin Powershell > Change to downloads folder (or wherever you saved your python script > type the command: pyinstaller remove-threat.py
+Now that we have created the script its time to convert the active response script into a Windows Executable.<br/>
+
+    Open admin Powershell > Change to downloads folder (or wherever you saved your python script > type the command: pyinstaller remove-threat.py
+![image](https://github.com/user-attachments/assets/3a6c8ca0-eb69-4a5e-9f82-bb94a3df76da)
 
 
 Now that we have converted it. Look for the executable and copy it
+![image](https://github.com/user-attachments/assets/3739f872-bc17-4dab-a5c7-be848bdef384)
 
 Head over to the Ossec-agent folder > click on active-response > bin > Paste the remove-threat.exe in the folder
+![image](https://github.com/user-attachments/assets/86140082-ef20-47ee-9c2d-d1cfa4094dd1)
 
 Head into powershell and restart the service using the command: Restart-Service -Name wazuh
+![image](https://github.com/user-attachments/assets/7f19db88-d172-4cab-aed0-32d1227e2a69)
 
 ### 7g. Configuring the Wazuh server
 
     SSH into Wazuh Server > Look for <command> block > Paste the code :
 
 <ul>
-<command>
-    <name>remove-threat</name>
-    <executable>remove-threat.exe</executable>##Ensure this is your .exe filename
-    <timeout_allowed>no</timeout_allowed>
-</command>
-
-  <active-response>
-    <disabled>no</disabled>
-    <command>remove-threat</command>
-    <location>local</location>
-    <rules_id>100092</rules_id>
-  </active-response>
+    <command>
+        <name>remove-threat</name>
+        <executable>remove-threat.exe</executable>##Ensure this is your .exe filename
+        <timeout_allowed>no</timeout_allowed>
+    </command>
+    <active-response>
+        <disabled>no</disabled>
+        <command>remove-threat</command>
+        <location>local</location>
+        <rules_id>100092</rules_id>
+    </active-response>
 </ul>
+![image](https://github.com/user-attachments/assets/56ab96f4-c560-43e9-9a1b-6224de16d61f)
 
 And then save!
 
 ### 7h. Configuring our Shuffle Workflow
 
 Now that we have configured the Active response on our  Wazuh server. We will now modify our shuffle workflow to implement it! The 4 things we will be adding:
-A HTTP request icon that will curl for a JWT token from Wazuh on port 55000.
-A user input icon that will take the user input from the SOC Analyst, with an embedded True and False link in the email.
-A Wazuh application that will run an active response command.
-Lastly, an email will inform the SOC Analyst that the Threat has been neutralized.
-
+<ul>
+    A HTTP request icon that will curl for a JWT token from Wazuh on port 55000.
+    A user input icon that will take the user input from the SOC Analyst, with an embedded True and False link in the email.
+    A Wazuh application that will run an active response command.
+    Lastly, an email will inform the SOC Analyst that the Threat has been neutralized.
+<ul/>
+    
 Log into Shuffle and add the “http”  icon to the Workflow and rename it to GET_API. Drag the icon in between the SHA-256 Regex and VirusTotal icons. Once you have placed the icon in between. Connect SHA 256 Regex icon to the GET_API icon and connect the Get_API icon to the Virus total Icon. *See below for reference
+![image](https://github.com/user-attachments/assets/f6b7de96-7db0-4824-9f20-4083a570e559)
 
 
 After you have Done that. Set the find Actions field to Curl. Priro to filling the Statement field. SSH into the Wazuh Server and get wazuh API password. You can find this in the place you extracted the wazuh-install files.tar. You can find the password in the wazuh-passwords.txt. copy the api password onto a notepad as we will need it to write our statement.
 
 Once you have gotten the API Password copy the statement below and paste it into the statement:
-curl -u YourApiUser:YourApiPassword -k -X GET "https://YourWazuhIP:55000/security/user/authenticate?raw=true"
+
+    curl -u YourApiUser:YourApiPassword -k -X GET "https://YourWazuhIP:55000/security/user/authenticate?raw=true"
+
+![image](https://github.com/user-attachments/assets/1893c3dd-cbf6-4adf-bb93-e5f0abf48eb6)
 
 The Next step is to get some user input. Drag the user input icon and add the Temporaryt email id to the Email box.
 Paste the Text below abd paste it in the Information field:
-Mimikatz activity detected on host: $exec.text.win.system.computer and the processID is: $exec.text.win.system.processID and the command line is: $exec.text.win.eventdata.commandLine
 
-Choose whether you approve or deny the deletion of the Mimikatz file from the system.
+    Mimikatz activity detected on host: $exec.text.win.system.computer and the processID is: $exec.text.win.system.processID and the command line is: $exec.text.win.eventdata.commandLine
+    Choose whether you approve or deny the deletion of the Mimikatz file from the system.
+![image](https://github.com/user-attachments/assets/79935209-f12d-468b-b3a2-5667c80317f1)
 
 Next we will now add and configure Wazuh. In Shuffle Install the Wazuh application by clicking on it. After installation, drag the icon onto your workflow.  And connect the User Input to the Wazuh Icon.
+![image](https://github.com/user-attachments/assets/082ff937-9500-4f3e-ac04-1103640daa22)
 
 Click on the Wazuh Application and Change the find Actions to “Run Command” >Change the APIkey to GET_API >  Change the URL to your IPaddress:55000
+![image](https://github.com/user-attachments/assets/9249bde5-1361-4625-a8d8-2435f3b79ca6)
 
 Choose simple to fille required detail about action. > Change the Command box, type remove-threat (Ensure this matches the name we had in the ossec.conf file) > Change the the Agents list field: select runtime > scroll to agents section and click on id
+![image](https://github.com/user-attachments/assets/e36ffdd0-4fcc-4750-b989-0c7cbfdf261a)
+![image](https://github.com/user-attachments/assets/218e8fc1-53ad-4cde-8584-f2b4b04f16fb)
 
 
 Next for our last step of the work flow is to configure an email to let our SOC analyst know that the Threat has been neutralized!
 
 Drag the email icon to our Work flow> Rename the Icon > Connect the Wazuh icon to the Email Icon
+![image](https://github.com/user-attachments/assets/b4672296-a99c-4fab-888a-cd4443474971)
 
 Double Click on the Email Icon and configure > Change find Actions field to : Send email shuffle > Change Recipients to your email> Add a Subject > Add a Body Letting the SOC analyst know that the threat has been removed > Save
+![image](https://github.com/user-attachments/assets/f184ecf5-68f6-4a42-999c-642364ccda0a)
 
 Here is how our final workflow should look like:
+![image](https://github.com/user-attachments/assets/2c52d2e4-4e62-4ef3-ae9c-da01c5efa562)
 
 Step 8:Troubleshooting
