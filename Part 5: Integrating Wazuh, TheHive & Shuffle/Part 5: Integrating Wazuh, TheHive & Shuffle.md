@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a7f4f8b1-b4b2-4ebf-ae5d-13717beb1377)# Objective:
+# Objective:
 Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to SOC Analyst (ME) via Email.
 
 # Skills:
