@@ -4,7 +4,7 @@
 
 
 ## Objective
-Using <a href="https://www.youtube.com/playlist?list=PLYHfX1HJ8dv-S0mJlG7TJF70F44ZX7XLu">MyDFIR's Videos</a>, our objective is to create a fully functional Home lab with Responsive Capabilites and a case management system that can mimick a SOC environment. 
+Using <a href="https://www.youtube.com/playlist?list=PLYHfX1HJ8dv-S0mJlG7TJF70F44ZX7XLu">MyDFIR's Videos</a>, our objective is to create a fully functional Home lab with responsive capabilites and a case management system that can mimick a SOC environment! 
 
 
 
