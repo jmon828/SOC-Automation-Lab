@@ -13,7 +13,7 @@ Create a visual that allows us to visualize how data might flow and what compone
 
 ## Steps
 ### Step 1: Component Overview 
-Compnent Breakdown:
+Component Breakdown:
 <ul>
 <l1> 4 Internet Clouds</l1><br/>
 <l2>  -1 = Internet </l2><br/>
