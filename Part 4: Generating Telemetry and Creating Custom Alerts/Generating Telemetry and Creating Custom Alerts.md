@@ -19,14 +19,14 @@ Generate Telemetry from our Windows 10 Machine and ensure that it is being inges
 
 # Steps
 <ul>
-  <a href="">Step 1: Configure Windows 10 Telemetry</a><br/>
-  <a href="">Step 2: Configuring ossec.configuration to ingest Sysmon logs</a><br/>
-  <a href="">Step 3: Installing Mimikatz on to our VM</a><br/>
-  <a href="">Step 4: Creating a Wazuh alert</a><br/>
-  <a href="">Step 5: Creating a New Index</a><br/>
-  <a href="">Step 6: Troubleshooting incoming events </a><br/>
-  <a href="">Step 7: Creating a Rule</a><br/>
-  <a href="">Step 8: Testing the Rule</a><br/>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%204:%20Generating%20Telemetry%20and%20Creating%20Custom%20Alerts/Generating%20Telemetry%20and%20Creating%20Custom%20Alerts.md#step-1-configure-windows-10-telemetry">Step 1: Configure Windows 10 Telemetry</a><br/>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%204:%20Generating%20Telemetry%20and%20Creating%20Custom%20Alerts/Generating%20Telemetry%20and%20Creating%20Custom%20Alerts.md#step-2-configuring-ossecconfiguration-to-ingest-sysmon-logs">Step 2: Configuring ossec.configuration to ingest Sysmon logs</a><br/>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%204:%20Generating%20Telemetry%20and%20Creating%20Custom%20Alerts/Generating%20Telemetry%20and%20Creating%20Custom%20Alerts.md#step-3-installing-mimikatz-on-to-our-vm">Step 3: Installing Mimikatz on to our VM</a><br/>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%204:%20Generating%20Telemetry%20and%20Creating%20Custom%20Alerts/Generating%20Telemetry%20and%20Creating%20Custom%20Alerts.md#step-4-creating-a-wazuh-alert">Step 4: Creating a Wazuh alert</a><br/>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%204:%20Generating%20Telemetry%20and%20Creating%20Custom%20Alerts/Generating%20Telemetry%20and%20Creating%20Custom%20Alerts.md#step-5-creating-a-new-index">Step 5: Creating a New Index</a><br/>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%204:%20Generating%20Telemetry%20and%20Creating%20Custom%20Alerts/Generating%20Telemetry%20and%20Creating%20Custom%20Alerts.md#step-6-troubleshooting-incoming-events">Step 6: Troubleshooting incoming events </a><br/>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%204:%20Generating%20Telemetry%20and%20Creating%20Custom%20Alerts/Generating%20Telemetry%20and%20Creating%20Custom%20Alerts.md#step-7-creating-a-rule">Step 7: Creating a Rule</a><br/>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%204:%20Generating%20Telemetry%20and%20Creating%20Custom%20Alerts/Generating%20Telemetry%20and%20Creating%20Custom%20Alerts.md#step-8-testing-the-rule">Step 8: Testing the Rule</a><br/>
 </ul>
 
 ## Step 1: Configure Windows 10 Telemetry<br/>
