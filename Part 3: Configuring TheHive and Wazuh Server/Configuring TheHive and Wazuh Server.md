@@ -23,15 +23,8 @@ Our objective for this seciton is to Configure TheHive and Wazuh Servers and ver
 # Steps: 
 <ul>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-1-configure-thehive">Step 1: Configure TheHIVE</a><br/>
-	<ul>
-		<l1> <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1a-configuring-cassandra">1a. Configuring Cassandra</a></l1><br/>
-		<l2> <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1b-configuring-elastic-search">1b. Configuring Elastic Search </a></l2><br/>
-		<l3><a href = "https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1c-finalizing-thehive-">1c: Finalizing TheHive.</a></l3><br/>
-		<l4><a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#1d-verifying-functionality-of-thehive-" >1d. Verifying functionality of TheHive </a></l4><br/>
-	</ul><br/>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-2-configuring-wazuh-">Step 2: Configuring the Wazuh Server</a><br/>
 	<a href ="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%203:%20Configuring%20TheHive%20and%20Wazuh%20Server/Configuring%20TheHive%20and%20Wazuh%20Server.md#step-3-configuring-our-windows-10-vm">Step 3: Configuring Our Windows 10 VM</a>
-</ul>
 </ul>
 
 ## Step 1: Configure TheHIVE<br/>
