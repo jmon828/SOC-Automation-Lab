@@ -13,14 +13,23 @@ Generate Telemetry from our Windows 10 Machine and ensure that it is being inges
 </ul>
 
 # Links
-
+<ul>
+  <a href="https://www.youtube.com/watch?v=amTtlN3uvFU&t=3s">1. SOC Automation Project (Home Lab) | Part 4</a>
+</ul>
 
 # Steps
 <ul>
-  
+  <a href="">Step 1: Configure Windows 10 Telemetry</a><br/>
+  <a href="">Step 2: Configuring ossec.configuration to ingest Sysmon logs</a><br/>
+  <a href="">Step 3: Installing Mimikatz on to our VM</a><br/>
+  <a href="">Step 4: Creating a Wazuh alert</a><br/>
+  <a href="">Step 5: Creating a New Index</a><br/>
+  <a href="">Step 6: Troubleshooting incoming events </a><br/>
+  <a href="">Step 7: Creating a Rule</a><br/>
+  <a href="">Step 8: Testing the Rule</a><br/>
 </ul>
 
-## Step 1: configure Windows 10 Telemetry<br/>
+## Step 1: Configure Windows 10 Telemetry<br/>
 
     Open you VM > File Explorer > File Path: This PC\LocalDisk\Program Files (x86)\ossec-agent\ > ossec .conf > Open with Notepad
 ![image](https://github.com/user-attachments/assets/79639c1a-e37a-41cc-ad4f-7871eefa6251)
