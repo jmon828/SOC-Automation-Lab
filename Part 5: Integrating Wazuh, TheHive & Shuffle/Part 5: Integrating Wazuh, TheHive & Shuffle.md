@@ -3,18 +3,21 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
 
 # Skills:
 <ul>
-    1. 
+    1. Configured Automation with Shuffle
+    2. Configured Case Management tool, TheHive
+    3. Integrated Virus Total in Automation tool
+    4. Utilized ChatGPT for Code assistance
 </ul>
 
     
 # Tools:
 <ul>
     Shuffle- Automation<br/>
-    TheHive- Case management tool <br/>
-    VirusTotal- <br/>
-    ChatGPT - <br/>
+    TheHive- Collaborative Case Management Platform <br/>
+    VirusTotal- Free File Malware scanner <br/>
+    ChatGPT - AI Assistant/chatbot <br/>
     Temp-mail.io – Temporary mailbox <br/>
-    Pyinstaller – converts script into an executable<br/>
+    Pyinstaller – Converts script into an executable<br/>
 </ul>
 
 # Links:
@@ -23,6 +26,15 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
 </ul>
 
 # Steps:
+<ul>
+     <a href="sd">Step 1: Setting up Shuffle</a>
+     <a href="sd">Step 2: Connecting the Wazuh Manager to Shuffle</a>
+     <a href="sd">Step 3: Creating a Workflow</a>
+     <a href="sd">Step 4: Setting up  API to check reputation score</a>
+     <a href="sd">Step 5: Implementing theHIVE</a>
+     <a href="sd">Step 6: Creating an email to send to a Security Analyst</a>
+     <a href="sd">Step 7: Active Response Setup</a>
+</ul>
 ## Step 1: Setting up Shuffle
     Head to  site > Create an account > Click on Work flows on the Left-hand side
 ![image](https://github.com/user-attachments/assets/d79ce88c-2d18-46fe-a9bf-140c2de743e1)
@@ -72,7 +84,7 @@ Once we have confirmed that the service is active, Next we will regenerate the M
 
 Next we want to head to our shuffle instance and Test our workflow
 
-    Login to Shuffler > Open your Workflow > Click on Webhook Icon > click Start on the right-hand side
+    Login to Shuffle > Open your Workflow > Click on Webhook Icon > click Start on the right-hand side
 ![image](https://github.com/user-attachments/assets/2b33e738-82f5-496c-917f-df219f4056f9)
 
 Next Click on the running icon at the bottom and test the workflow
@@ -135,18 +147,18 @@ Copy VirusTotal Key
 ### 4b. Head back to shuffle and add the Virus Total App
 ![image](https://github.com/user-attachments/assets/d7aa5ec9-67cb-4696-aaf0-6ba59d3f3bb9)
 
-Once the app is Activated > Drag and drop the App on to our workflow
+    Once the app is Activated > Drag and drop the App on to our workflow
 ![image](https://github.com/user-attachments/assets/a705dcb4-d358-4871-8d52-fd2e950c9bc6)
 
 ### 4c. Configure VirusTotal App
 ![image](https://github.com/user-attachments/assets/d6ac1639-c250-4f01-81e2-78961a35f690)
 
-Click on Authenticate Virustotal V3 to apply the API key you copied earlier and submit\
+Click on Authenticate Virustotal V3 to apply the API key you copied earlier and submit
 ![image](https://github.com/user-attachments/assets/7c5930a6-bd2a-4c09-b3a7-8060b5e7619d)
 ![image](https://github.com/user-attachments/assets/704b87a3-a92c-4548-ac94-8f3eacd84bb8)
 
 
-Once Submitted > Ensure that the”ID” is set to the Regex output. Remember the regex is there to parse out the value of the hash!
+Once Submitted > Ensure that the ”ID” is set to the Regex output. Remember the regex is there to parse out the value of the hash!
 ![image](https://github.com/user-attachments/assets/e24f2ddb-3d2a-4767-8e1e-bcbab73de4aa)
 
 ### 4d. VirusTotal Testing and Troubleshooting
@@ -190,7 +202,7 @@ If you are getting any sort of authentication error, this usually means that ela
 ![image](https://github.com/user-attachments/assets/028b7342-a676-430a-aac8-ce0bb345971a)
 
 
-### 5c. adding another organization and creating a new user under that organization
+### 5c. Adding another organization and creating a new user under that organization
 By default we only have one organization. We can add another by clicking the plus icon on the top left
 ![image](https://github.com/user-attachments/assets/ee303a1d-80e3-485e-9374-cf106af525af)
 
