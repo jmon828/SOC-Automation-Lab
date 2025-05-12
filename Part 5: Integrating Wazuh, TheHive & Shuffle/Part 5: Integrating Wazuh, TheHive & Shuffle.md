@@ -22,7 +22,8 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
 
 # Links:
 <ul>
-    <a href="sd"></a><br/>
+    <a href="https://www.youtube.com/watch?v=GNXK00QapjQ&t=61s">1. SOC Automation Project (Home Lab) | Part 5</a><br/>
+    <a href="https://medium.com/@kumarr71621/enhanced-security-incident-management-with-wazuh-and-soar-automation-fe9b69bbf127">2. Enhanced Security Incident Management with WAZUH and SOAR Automation by. Rajat Kumar</a>
 </ul>
 
 # Steps:
