@@ -3,37 +3,37 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
 
 # Skills:
 <ul>
-    1. Configured Automation with Shuffle
-    2. Configured Case Management tool, TheHive
-    3. Integrated Virus Total in Automation tool
-    4. Utilized ChatGPT for Code assistance
+    1. Configured Automation with Shuffle<br/>
+    2. Configured Case Management tool, TheHive<br/>
+    3. Integrated Virus Total in Automation tool<br/>
+    4. Utilized ChatGPT for Code assistance<br/>
 </ul>
 
     
 # Tools:
 <ul>
-    Shuffle- Automation<br/>
-    TheHive- Collaborative Case Management Platform <br/>
-    VirusTotal- Free File Malware scanner <br/>
-    ChatGPT - AI Assistant/chatbot <br/>
-    Temp-mail.io – Temporary mailbox <br/>
-    Pyinstaller – Converts script into an executable<br/>
+    1. Shuffle- Automation<br/>
+    2. TheHive- Collaborative Case Management Platform <br/>
+    3. VirusTotal- Free File Malware scanner <br/>
+    4. ChatGPT - AI Assistant/chatbot <br/>
+    5. Temp-mail.io – Temporary mailbox <br/>
+    6, Pyinstaller – Converts script into an executable<br/>
 </ul>
 
 # Links:
 <ul>
-    <a href="sd"></a>
+    <a href="sd"></a><br/>
 </ul>
 
 # Steps:
 <ul>
-     <a href="sd">Step 1: Setting up Shuffle</a>
-     <a href="sd">Step 2: Connecting the Wazuh Manager to Shuffle</a>
-     <a href="sd">Step 3: Creating a Workflow</a>
-     <a href="sd">Step 4: Setting up  API to check reputation score</a>
-     <a href="sd">Step 5: Implementing theHIVE</a>
-     <a href="sd">Step 6: Creating an email to send to a Security Analyst</a>
-     <a href="sd">Step 7: Active Response Setup</a>
+     <a href="sd">Step 1: Setting up Shuffle</a><br/>
+     <a href="sd">Step 2: Connecting the Wazuh Manager to Shuffle</a><br/>
+     <a href="sd">Step 3: Creating a Workflow</a><br/>
+     <a href="sd">Step 4: Setting up  API to check reputation score</a><br/>
+     <a href="sd">Step 5: Implementing theHIVE</a><br/>
+     <a href="sd">Step 6: Creating an email to send to a Security Analyst</a><br/>
+     <a href="sd">Step 7: Active Response Setup</a><br/>
 </ul>
 ## Step 1: Setting up Shuffle
     Head to  site > Create an account > Click on Work flows on the Left-hand side
