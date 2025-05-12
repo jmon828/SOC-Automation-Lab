@@ -4,16 +4,17 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
 # Skills:
 <ul>
     1. 
-</ul
+</ul>
+
     
 # Tools:
 <ul>
-    Shuffle- Automation
-    TheHive- Case management tool 
-    VirusTotal- 
-    ChatGPT - 
-    Temp-mail.io – Temporary mailbox
-    Pyinstaller – converts script into executable
+    Shuffle- Automation<br/>
+    TheHive- Case management tool <br/>
+    VirusTotal- <br/>
+    ChatGPT - <br/>
+    Temp-mail.io – Temporary mailbox <br/>
+    Pyinstaller – converts script into an executable<br/>
 </ul>
 
 # Links:
