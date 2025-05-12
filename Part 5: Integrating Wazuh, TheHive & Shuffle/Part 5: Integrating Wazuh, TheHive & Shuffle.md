@@ -27,13 +27,13 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
 
 # Steps:
 <ul>
-     <a href="sd">Step 1: Setting up Shuffle</a><br/>
-     <a href="sd">Step 2: Connecting the Wazuh Manager to Shuffle</a><br/>
-     <a href="sd">Step 3: Creating a Workflow</a><br/>
-     <a href="sd">Step 4: Setting up  API to check reputation score</a><br/>
-     <a href="sd">Step 5: Implementing theHIVE</a><br/>
-     <a href="sd">Step 6: Creating an email to send to a Security Analyst</a><br/>
-     <a href="sd">Step 7: Active Response Setup</a><br/>
+     <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle.md#step-1-setting-up-shuffle">Step 1: Setting up Shuffle</a><br/>
+     <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle.md#step-2-connecting-the-wazuh-manager-to-shuffle">Step 2: Connecting the Wazuh Manager to Shuffle</a><br/>
+     <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle.md#step-3-creating-a-workflow">Step 3: Creating a Workflow</a><br/>
+     <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle.md#step-4-setting-up--api-to-check-reputation-score">Step 4: Setting up API to check reputation score</a><br/>
+     <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle.md#step-5-implementing-thehive">Step 5: Implementing theHIVE</a><br/>
+     <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle.md#step-6-create-an-email-the-contains-relevant-information-to-send-to-a-security-analyst">Step 6: Creating an email to send to a Security Analyst</a><br/>
+     <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle/Part%205:%20Integrating%20Wazuh,%20TheHive%20&%20Shuffle.md#step-7-active-response-setup">Step 7: Active Response Setup</a><br/>
 </ul>
 
 
