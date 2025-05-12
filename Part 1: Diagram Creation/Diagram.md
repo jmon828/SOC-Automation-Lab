@@ -2,17 +2,22 @@
 
 
 
-## Objective
+# Objective
 Create a visual that allows us to visualize how data might flow and what components are required to build our SOC Automation Project 
 
-## Skills Learned
+# Skills Learned
 -	Utilized Draw.io to provide a graphical interface to visulaize how packets flow and what components will be involved in our project.
 
-## Tools Used
+# Tools
 <a href="https://app.diagrams.net/"> Draw.io- easy-to-use flowchart/diagram maker</a>
 
-## Steps
-### Step 1: Component Overview 
+# Steps
+<ul>
+  <a href="https://github.com/jmon828/SOC-Automation-Lab/blob/main/Part%201%3A%20Diagram%20Creation/Diagram.md#step-1-component-overview"> Step 1:Component Overview</a>
+  <a href="">Step 2: Connection
+</ul>
+    
+## Step 1: Component Overview 
 Component Breakdown:
 <ul>
 <l1> 4 Internet Clouds</l1><br/>
@@ -27,7 +32,7 @@ Component Breakdown:
 
 ![image](https://github.com/user-attachments/assets/78408352-7bf5-4aea-8233-e3e91635a465)
 
-### Step 2: Connections
+## Step 2: Connections
 <dl>
   <dt>Hover over a component and connect it to another component</dt>
   
@@ -36,8 +41,6 @@ Component Breakdown:
   ![image](https://github.com/user-attachments/assets/496e90c1-c249-403c-bc0b-a6857a888b1e)
 
   <dt>Repeat for the other connections</dt>
-
-
 
 
 <ul>
@@ -57,7 +60,7 @@ Component Breakdown:
 
 
 -------------------------------------------------------------------------------------------------------------
-## End Result:
+# End Result:
 ![image](https://github.com/user-attachments/assets/e807eb4e-a897-4e8c-9fc7-0b10e9c8a755)
 
 
