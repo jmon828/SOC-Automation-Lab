@@ -17,7 +17,7 @@ Our objective for this seciton is to Configure TheHive and Wazuh Servers and ver
 
 # Links:
 <ul>
-	<a href="https://www.youtube.com/watch?v=VuSKMPRXN1M&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=8&t=6s">SOC Automation Project - MyDFIR</a>
+	<a href="https://www.youtube.com/watch?v=VuSKMPRXN1M&list=PLYHfX1HJ8dv8RVatf6ULT1Ga5RaLMWreQ&index=8&t=6s">1. SOC Automation Project (Home Lab) | Part 3</a>
 </ul>
 
 # Steps: 
