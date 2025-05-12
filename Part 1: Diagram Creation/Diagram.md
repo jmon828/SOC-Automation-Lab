@@ -1,5 +1,5 @@
-# Part 1: Diagram Creation
-![image](https://github.com/user-attachments/assets/41527032-0f8d-4e57-abb2-fd03bd2822d2)
+![image](https://github.com/user-attachments/assets/e807eb4e-a897-4e8c-9fc7-0b10e9c8a755)
+
 
 
 ## Objective
@@ -36,8 +36,9 @@ Component Breakdown:
   ![image](https://github.com/user-attachments/assets/496e90c1-c249-403c-bc0b-a6857a888b1e)
 
   <dt>Repeat for the other connections</dt>
-  
-  ![image](https://github.com/user-attachments/assets/45cf8f02-2eb1-4153-9016-12d077ff1708)
+
+ ![image](https://github.com/user-attachments/assets/0336a91e-cc1b-4d9c-bc09-9515208fc9b9)
+
 
 <dl>
   <dt>Color Guide:</dt>
