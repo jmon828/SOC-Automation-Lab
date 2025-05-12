@@ -37,27 +37,27 @@ Component Breakdown:
 
   <dt>Repeat for the other connections</dt>
 
- ![image](https://github.com/user-attachments/assets/0336a91e-cc1b-4d9c-bc09-9515208fc9b9)
 
 
-<dl>
-  <dt>Color Guide:</dt>
-  <dd>Gray = Sending/Receiving Events</dd>
-  <dd>Blue= Send Alerts</dd>
-  <dd>Green = Enrich IOCs</dd>
-  <dd>Orange= Sends/Receiving Emails</dd>
-  <dd>Red= Send/Perform Actions</dd>
-</dl>
+
+<ul>
+  Color Guide:<br/>
+  Gray = Sending/Receiving Events<br/>
+  Blue= Send Alerts<br/>
+  Green = Enrich IOCs<br/>
+  Orange= Sends/Receiving Emails<br/>
+  Red= Send/Perform Actions<br/>
+</ul>
   
   <dt>Double-click the two lines to add a lable to the connection</dt>
 
-![image](https://github.com/user-attachments/assets/e805b988-3f44-4f57-9029-bd9d48338ff9)
+ ![image](https://github.com/user-attachments/assets/e805b988-3f44-4f57-9029-bd9d48338ff9)
 
 
 
 
 -------------------------------------------------------------------------------------------------------------
 ## End Result:
-![image](https://github.com/user-attachments/assets/5e98057c-e680-4deb-8124-75253b8f0fe6)
+![image](https://github.com/user-attachments/assets/e807eb4e-a897-4e8c-9fc7-0b10e9c8a755)
 
 
