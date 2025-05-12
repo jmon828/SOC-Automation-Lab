@@ -12,7 +12,7 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
     
 # Tools:
 <ul>
-    1. Shuffle- Automation<br/>
+    1. Shuffle- Security Orchestration, Automation, and Response Tool<br/>
     2. TheHive- Collaborative Case Management Platform <br/>
     3. VirusTotal- Free File Malware scanner <br/>
     4. ChatGPT - AI Assistant/chatbot <br/>
