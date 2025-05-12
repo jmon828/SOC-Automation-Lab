@@ -35,6 +35,8 @@ Connect Shuffle (SOAR Platform) to send alerts to TheHive and send an alert to S
      <a href="sd">Step 6: Creating an email to send to a Security Analyst</a><br/>
      <a href="sd">Step 7: Active Response Setup</a><br/>
 </ul>
+
+
 ## Step 1: Setting up Shuffle
     Head to  site > Create an account > Click on Work flows on the Left-hand side
 ![image](https://github.com/user-attachments/assets/d79ce88c-2d18-46fe-a9bf-140c2de743e1)
