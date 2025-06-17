@@ -510,5 +510,3 @@ Double Click on the Email Icon and configure > Change find Actions field to : Se
 
 Here is how our final workflow should look like:
 ![image](https://github.com/user-attachments/assets/2c52d2e4-4e62-4ef3-ae9c-da01c5efa562)
-
-Step 8:Troubleshooting
